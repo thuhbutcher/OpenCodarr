@@ -1,0 +1,98 @@
+{
+  "schema": "arrverse.sdk-sdc-coding-envelope.v1",
+  "standardRef": "ARRVERSE.SDK-SDC-CODING@0.1.0-candidate.1",
+  "occurrenceId": "opencodarr.session-guardian.dev-port.20261029",
+  "taskRef": "OpenCodarr:session-guardian-initial",
+  "subject": {
+    "subjectId": "OpenCodarr.session-guardian",
+    "subjectKind": "LOCAL_PLUGIN",
+    "ownerRef": "thuhbutcher/OpenCodarr"
+  },
+  "source": {
+    "repository": "thuhbutcher/OpenCodarr",
+    "ref": "guardian-dev",
+    "commit": "237a847056522ec78a5c64ab7db5a19736e1ea58",
+    "paths": [
+      "bun.lock",
+      "packages/plugins/session-guardian/README.md",
+      "packages/plugins/session-guardian/SDK_SDC_CODING_ENVELOPE.v1.json",
+      "packages/plugins/session-guardian/contract.test.ts",
+      "packages/plugins/session-guardian/contract.ts",
+      "packages/plugins/session-guardian/host.test.ts",
+      "packages/plugins/session-guardian/index.ts",
+      "packages/plugins/session-guardian/package.json",
+      "packages/plugins/session-guardian/test/host-fixture.ts",
+      "packages/plugins/session-guardian/tsconfig.json"
+    ]
+  },
+  "sdc": {
+    "packageRef": "thuhbutcher/ArrVerseOfficial#40",
+    "generationRef": "12edcc62b99cccfebf3e4f5cb1bdc3cbbd462feb",
+    "stages": [
+      "GATHER",
+      "BIND",
+      "RESEARCH",
+      "PLAN",
+      "BUILD",
+      "PROVE",
+      "RECEIPT",
+      "LEARN",
+      "RECONCILE"
+    ],
+    "minimumNecessaryContext": true
+  },
+  "sdk": {
+    "generationRef": "6a4e9f1dfa395c90624022ace0153756aa624b33",
+    "profile": "LOCAL_INTERNAL",
+    "sdkRequired": true,
+    "contractPackRefs": []
+  },
+  "affectedTags": [
+    "SOURCE",
+    "TOOLING",
+    "CONFIG",
+    "RECOVERY",
+    "EVIDENCE"
+  ],
+  "templarr": {
+    "disposition": "PATTERN_ONLY",
+    "refs": [
+      "thuhbutcher/ArrVerseReconstruction#1045@fa9ef205e6f376d5b193f83ffe675503c93ca574",
+      "anomalyco/opencode@237a847056522ec78a5c64ab7db5a19736e1ea58:packages/plugins/figma"
+    ],
+    "reason": "Pattern-mine the existing plugin architecture and upstream plugin shape; no Templarr application or admission is claimed."
+  },
+  "proof": {
+    "positiveTests": [
+      "Session contract selection and bounded projection",
+      "Isolated OpenCode v2.2.2 host loads the configured local plugin and completes synthetic compaction"
+    ],
+    "hostileTests": [
+      "Reject invalid and oversized contract inputs",
+      "Other session receives no selected-session contract",
+      "Repeated hook projection does not duplicate guidance"
+    ],
+    "sharedSdkSurface": false,
+    "parityLanguages": [],
+    "recoveryDisposition": "REQUIRED",
+    "recoveryTests": [
+      "Synthetic in-host compaction request projects the selected contract",
+      "Persistent checkpoint and restart recovery are not implemented and remain NOT_RUN"
+    ]
+  },
+  "reconciliation": {
+    "targets": [
+      "PROJECTARR",
+      "WIKIARR",
+      "ASA",
+      "BREADCRUMB"
+    ],
+    "ownerReadbackRefs": []
+  },
+  "authority": {
+    "sdkGrantsPermission": false,
+    "contextGrantsPermission": false,
+    "effectAuthority": false
+  },
+  "claimState": "AUTHORED"
+}
