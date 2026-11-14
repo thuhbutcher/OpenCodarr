@@ -1,0 +1,106 @@
+{
+  "schema": "arrverse.sdk-sdc-coding-envelope.v1",
+  "standardRef": "ARRVERSE.SDK-SDC-CODING@0.1.0-candidate.1",
+  "occurrenceId": "opencodarr.upstream-rebase.20261114",
+  "taskRef": "OpenCodarr:rebase-latest-stable-v2",
+  "subject": {
+    "subjectId": "OpenCodarr.upstream-rebase",
+    "subjectKind": "LOCAL_TOOL",
+    "ownerRef": "thuhbutcher/OpenCodarr"
+  },
+  "source": {
+    "repository": "thuhbutcher/OpenCodarr",
+    "ref": "opencodarr-rebase",
+    "commit": "a6b15d33daf6ab7d35569f6d711fdb630b9f04e7",
+    "paths": [
+      "OPENCODARR_REBASE.md",
+      "OPENCODARR_REBASE_SDK_SDC.v1.json",
+      "bun.lock",
+      "packages/plugins/session-guardian/README.md",
+      "packages/plugins/session-guardian/SDK_SDC_CODING_ENVELOPE.v1.json",
+      "packages/plugins/session-guardian/contract.test.ts",
+      "packages/plugins/session-guardian/contract.ts",
+      "packages/plugins/session-guardian/host.test.ts",
+      "packages/plugins/session-guardian/index.ts",
+      "packages/plugins/session-guardian/package.json",
+      "packages/plugins/session-guardian/test/host-fixture.ts",
+      "packages/plugins/session-guardian/tsconfig.json",
+      "script/OPENCODARR_PILOT_README.md",
+      "script/OPENCODARR_PILOT_SDK_SDC_CODING_ENVELOPE.v1.json",
+      "script/opencodarr-pilot.py",
+      "script/opencodarr_pilot_test.py"
+    ]
+  },
+  "sdc": {
+    "packageRef": "thuhbutcher/ArrVerseOfficial#40",
+    "generationRef": "12edcc62b99cccfebf3e4f5cb1bdc3cbbd462feb",
+    "stages": [
+      "GATHER",
+      "BIND",
+      "RESEARCH",
+      "PLAN",
+      "BUILD",
+      "PROVE",
+      "RECEIPT",
+      "LEARN",
+      "RECONCILE"
+    ],
+    "minimumNecessaryContext": true
+  },
+  "sdk": {
+    "generationRef": "6a4e9f1dfa395c90624022ace0153756aa624b33",
+    "profile": "LOCAL_INTERNAL",
+    "sdkRequired": true,
+    "contractPackRefs": []
+  },
+  "affectedTags": [
+    "SOURCE",
+    "WORKSPACE",
+    "TOOLING",
+    "CONFIG",
+    "RECOVERY",
+    "EVIDENCE"
+  ],
+  "templarr": {
+    "disposition": "PATTERN_ONLY",
+    "refs": [
+      "anomalyco/opencode@a6b15d33daf6ab7d35569f6d711fdb630b9f04e7:packages/plugin/src/promise/session.ts",
+      "anomalyco/opencode@a6b15d33daf6ab7d35569f6d711fdb630b9f04e7:packages/cli/src/services/standalone.ts"
+    ],
+    "reason": "Preserve the upstream plugin and standalone seams; rebase existing local additions without claiming Templarr or owner adoption."
+  },
+  "proof": {
+    "positiveTests": [
+      "Existing Guardian pure contract and configured/embedded synthetic host cases against selected 2.3.0 closure",
+      "Existing isolated launcher tests against stub executables",
+      "Focused plugin type check and inherited SQLite interruption regression"
+    ],
+    "hostileTests": [
+      "Other sessions receive no Guardian projection; invalid or oversized contracts reject",
+      "Wrong binary digest and unsafe/reused/overlapping profiles reject",
+      "Interrupted SQLite permit acquisition does not strand subsequent operations"
+    ],
+    "sharedSdkSurface": false,
+    "parityLanguages": [],
+    "recoveryDisposition": "REQUIRED",
+    "recoveryTests": [
+      "Original guardian-dev and guardian-pilot-dev refs remain recoverable",
+      "Standalone automatic orphan recovery remains unsupported; no native recovery PASS is claimed"
+    ]
+  },
+  "reconciliation": {
+    "targets": [
+      "PROJECTARR",
+      "WIKIARR",
+      "ASA",
+      "BREADCRUMB"
+    ],
+    "ownerReadbackRefs": []
+  },
+  "authority": {
+    "sdkGrantsPermission": false,
+    "contextGrantsPermission": false,
+    "effectAuthority": false
+  },
+  "claimState": "AUTHORED"
+}

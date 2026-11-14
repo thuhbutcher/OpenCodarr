@@ -606,7 +606,7 @@
         "effect": "catalog:",
       },
       "peerDependencies": {
-        "@opencode/plugin": "2.1.4 || 2.2.2",
+        "@opencode/plugin": "2.3.0",
       },
     },
     "packages/protocol": {

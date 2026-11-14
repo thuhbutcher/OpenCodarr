@@ -32,3 +32,7 @@ Local configuration example (replace the synthetic session ID and objective deli
 The example is not an instruction to alter a live configuration. The plugin's source was developed against isolated OpenCode v2.1.4 and separately exercised against the v2.2.2 development baseline. These are distinct test populations; they do not prove compatibility with other versions. The synthetic host fixture uses the matching version's AI testing import. Native OpenBrainarr adoption needs exact source/owner compatibility, selected SDK/SDC and relevant Contract Packs, focused tests, and an independent receiving disposition.
 
 From this package directory, `bun test` runs bounded contract tests and two isolated embedded OpenCode host fixtures: one loads this package from configuration and one registers it programmatically. The hosts use fresh temporary directories and a synthetic in-process model; neither contacts a real provider. `bun run typecheck` and `bun run typecheck:tsc` are separate type checks. These checks do not establish an installed product or a provider-wire receipt.
+
+## Selected 2.3.0 source rebase
+
+The current package declares the pinned `@opencode/plugin@2.3.0` target. The earlier 2.1.4/2.2.2 records above are historical occurrences; their results do not transfer to this baseline. See [the migration record](../../../OPENCODARR_REBASE.md) for the exact upstream and carried commits, verification status and remaining limits. The plugin and its pure contract behavior are unchanged by the rebase.
