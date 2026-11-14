@@ -1,0 +1,94 @@
+{
+  "schema": "arrverse.sdk-sdc-coding-envelope.v1",
+  "standardRef": "ARRVERSE.SDK-SDC-CODING@0.1.0-candidate.1",
+  "occurrenceId": "opencodarr.isolated-pilot.dev.20261029",
+  "taskRef": "OpenCodarr:isolated-pilot-launcher",
+  "subject": {
+    "subjectId": "OpenCodarr.isolated-pilot",
+    "subjectKind": "LOCAL_TOOL",
+    "ownerRef": "thuhbutcher/OpenCodarr"
+  },
+  "source": {
+    "repository": "thuhbutcher/OpenCodarr",
+    "ref": "guardian-pilot-dev",
+    "commit": "dab4a7b412decb14f51c95d72dec8ee6055a5ee8",
+    "paths": [
+      "script/OPENCODARR_PILOT_README.md",
+      "script/OPENCODARR_PILOT_SDK_SDC_CODING_ENVELOPE.v1.json",
+      "script/opencodarr-pilot.py",
+      "script/opencodarr_pilot_test.py"
+    ]
+  },
+  "sdc": {
+    "packageRef": "thuhbutcher/ArrVerseOfficial#40",
+    "generationRef": "12edcc62b99cccfebf3e4f5cb1bdc3cbbd462feb",
+    "stages": [
+      "GATHER",
+      "BIND",
+      "RESEARCH",
+      "PLAN",
+      "BUILD",
+      "PROVE",
+      "RECEIPT",
+      "LEARN",
+      "RECONCILE"
+    ],
+    "minimumNecessaryContext": true
+  },
+  "sdk": {
+    "generationRef": "6a4e9f1dfa395c90624022ace0153756aa624b33",
+    "profile": "LOCAL_INTERNAL",
+    "sdkRequired": true,
+    "contractPackRefs": []
+  },
+  "affectedTags": [
+    "SOURCE",
+    "WORKSPACE",
+    "TOOLING",
+    "CONFIG",
+    "RECOVERY",
+    "EVIDENCE"
+  ],
+  "templarr": {
+    "disposition": "PATTERN_ONLY",
+    "refs": [
+      "anomalyco/opencode@237a847056522ec78a5c64ab7db5a19736e1ea58:packages/cli/src/services/standalone.ts",
+      "anomalyco/opencode@098aa7fd6e02b03d6fc410f0b052038c7d4c5e81:packages/cli/src/services/standalone.ts"
+    ],
+    "reason": "Use the existing standalone server seam; no ArrVerse Templarr application or admission is claimed."
+  },
+  "proof": {
+    "positiveTests": [
+      "Preflight a pinned binary and isolated profile",
+      "Launch a standalone process with isolated roots",
+      "Enable project configuration and instructions only when selected"
+    ],
+    "hostileTests": [
+      "Reject wrong binary hash and reused unmarked data",
+      "Reject overlapping paths, unsafe profiles and inherited server overrides",
+      "Do not use a nonempty project or silently skip detected project instructions in default mode"
+    ],
+    "sharedSdkSurface": false,
+    "parityLanguages": [],
+    "recoveryDisposition": "REQUIRED",
+    "recoveryTests": [
+      "Reject changed binary against an existing profile",
+      "Preserve existing unmarked profile contents"
+    ]
+  },
+  "reconciliation": {
+    "targets": [
+      "PROJECTARR",
+      "WIKIARR",
+      "ASA",
+      "BREADCRUMB"
+    ],
+    "ownerReadbackRefs": []
+  },
+  "authority": {
+    "sdkGrantsPermission": false,
+    "contextGrantsPermission": false,
+    "effectAuthority": false
+  },
+  "claimState": "AUTHORED"
+}
