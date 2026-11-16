@@ -36,3 +36,13 @@ From this package directory, `bun test` runs bounded contract tests and two isol
 ## Selected 2.3.0 source rebase
 
 The current package declares the pinned `@opencode/plugin@2.3.0` target. The earlier 2.1.4/2.2.2 records above are historical occurrences; their results do not transfer to this baseline. See [the migration record](../../../OPENCODARR_REBASE.md) for the exact upstream and carried commits, verification status and remaining limits. The plugin and its pure contract behavior are unchanged by the rebase.
+
+## Reload projection candidate — 2026-11-15
+
+OpenCode's selected 2.3.0 host can restore an earlier plugin after replacement setup fails, or retain it when the replacement module fails to load. Guardian therefore checks the current local plugin inventory at each selected-session context or compaction hook. It projects guidance only when that inventory contains exactly one active Guardian and no failed discovery entry for its exact local path or package target. A package version is not part of this match: the failed replacement may have no resolved version. Missing, ambiguous, failed, or unreadable Guardian inventory suppresses new guidance. An unrelated plugin failure does not suppress it. The check does not poll, retry, or wait for plugin activation.
+
+The inventory check is repeated for each projection, so a later healthy generation can resume guidance. Cleanup marks a generation disposed before removing registrations, preventing an in-flight inventory read from appending its old contract after teardown. Invalid contract options still fail setup, and no contract still leaves the plugin inert.
+
+This boundary only controls new contract guidance. It does not deny session, tool, or model execution; authenticate the contract; retract text already emitted or stored; establish a transaction with a concurrent host reload; or replace host failure reporting. Core's generic fallback policy is unchanged. The normal host inventory continues to report setup or discovery failures.
+
+`reload.test.ts` adds focused public-hook fixture tests for these projection rules. Those fixtures exercise Guardian's actual code with explicitly supplied inventory snapshots; they do not run the real OpenCode registry, supervisor, transport, or a model. Full Bun tests, type checks, and a real-host failed-reload/readback occurrence remain separate verification requirements. The earlier host evidence is not upgraded by these tests. The new occurrence is bound by `RELOAD_SDK_SDC_CODING_ENVELOPE.v1.json`; the original envelope remains historical.
