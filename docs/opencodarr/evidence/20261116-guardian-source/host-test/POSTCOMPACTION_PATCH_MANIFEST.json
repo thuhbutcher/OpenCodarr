@@ -1,0 +1,54 @@
+{
+  "schema": "opencodarr.postcompaction-test-candidate.v1",
+  "authoredAt": "2026-11-15T23:52:46Z",
+  "repository": "thuhbutcher/OpenCodarr",
+  "baseCommit": "12e0844dc66684b3336a626a0183d91f479d3315",
+  "candidateStatus": "AUTHORED_NOT_RUN",
+  "scope": "Two existing synthetic-host keeper cases extended; production source unchanged",
+  "independentFrom": "opencodarr-hardening-20261115 Guardian inventory guard",
+  "files": [
+    {
+      "path": "packages/plugins/session-guardian/host.test.ts",
+      "baseGitBlobSha1": "467d432c3fbe6d258f74a689772dc75fc273591f",
+      "baseSha256": "268222531b52174bbd87b14f8716b2cc82d0945b6eae6f41033695ada8601619",
+      "candidateSha256": "68445a8b9097b5b68e460bd631f33de5f5676aa12e89322ffedd8ddc34c67b91",
+      "baseBytes": 1822,
+      "candidateBytes": 2731
+    },
+    {
+      "path": "packages/plugins/session-guardian/test/host-fixture.ts",
+      "baseGitBlobSha1": "80c223b327cee3d748c973e1b4e4f70d90462bfd",
+      "baseSha256": "2413eb82cbd90b3f8f788a9374c8d2ab9078624ab6737e5cfd15fb985d9f8b91",
+      "candidateSha256": "b358570c0dfb9a7cde34a601b4a32b967a236e6e9dbf99a13d709d745e4c8598",
+      "baseBytes": 3688,
+      "candidateBytes": 6012
+    }
+  ],
+  "patch": {
+    "path": "postcompaction-host-test.patch",
+    "sha256": "dddaa2df37b26b5e1dba360a9507fa423df3a24a728d1c0377d2c8c108aaffae",
+    "bytes": 7355
+  },
+  "review": {
+    "path": "REVIEW.md",
+    "sha256": "f00bb6d0f77688814cb9f40e61d075bf44f95ccc5db40874f027074c676b8dc1"
+  },
+  "testDesign": {
+    "path": "POSTCOMPACTION_TEST_CANDIDATE.md",
+    "sha256": "1c2b09819ceb5df1f6633f376f688ee762b216df756c0710a48d693b6ea1fb1a"
+  },
+  "sourceProvenance": [
+    "PROVENANCE.json",
+    "PROVENANCE-extra.json",
+    "PROVENANCE-test-helper.json"
+  ],
+  "observedTests": 0,
+  "bunExecuted": false,
+  "packageTypecheckExecuted": false,
+  "actualCoreHostExecuted": false,
+  "providerCalls": 0,
+  "externalWrites": false,
+  "nativeProof": false,
+  "ownerApplied": false,
+  "approval": "NOT_GRANTED_BY_THIS_ARTIFACT"
+}

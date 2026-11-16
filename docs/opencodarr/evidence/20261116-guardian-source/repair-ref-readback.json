@@ -1,0 +1,27 @@
+{
+  "schema": "opencodarr.publication-ref-readback.v1",
+  "observedAtUTC": "2026-11-16 00:29:38 UTC",
+  "branch": "opencodarr-rebase",
+  "expectedOldHead": "12e0844dc66684b3336a626a0183d91f479d3315",
+  "newHead": "dfd3672d9faece5c973958c77aae8cc890c91709",
+  "updateRef": {
+    "success": true,
+    "force": false,
+    "expectedSHA": "12e0844dc66684b3336a626a0183d91f479d3315"
+  },
+  "immediateMetadataFirstRed": {
+    "endpoint": "github_get_pr_info",
+    "returnedHead": "12e0844dc66684b3336a626a0183d91f479d3315",
+    "result": "HEAD_MISMATCH",
+    "reason": "Not established; no forced retry performed"
+  },
+  "directReadbacks": {
+    "gitRef": "dfd3672d9faece5c973958c77aae8cc890c91709",
+    "branch": "dfd3672d9faece5c973958c77aae8cc890c91709",
+    "prHead": "dfd3672d9faece5c973958c77aae8cc890c91709",
+    "prState": "open",
+    "merged": false,
+    "draft": true
+  },
+  "result": "CANONICAL_REF_BRANCH_AND_PR_AGREE"
+}

@@ -3,7 +3,7 @@ import { mkdir, mkdtemp, rm } from "node:fs/promises"
 import { tmpdir } from "node:os"
 import { join } from "node:path"
 
-test.each(["configured", "embedded"])("isolated v2 %s host projects only to the bound session and retains guidance through compaction", async (mode) => {
+test.each(["configured", "embedded"])("isolated v2 %s host binds guidance to the next primary request after compaction without leaking it", async (mode) => {
   const root = await mkdtemp(join(tmpdir(), "opencodarr-guardian-test-"))
   const dirs = Object.fromEntries(["home", "config", "data", "cache", "state", "workspace", "tmp"].map((name) => [name, join(root, name)]))
   await Promise.all(Object.values(dirs).map((directory) => mkdir(directory)))
@@ -34,6 +34,17 @@ test.each(["configured", "embedded"])("isolated v2 %s host projects only to the 
     expect(result.other.every((count: number) => count === 0)).toBe(true)
     expect(result.compaction).toContain(1)
     expect(result.compactionCompleted).toBe(true)
+    // The expected bytes are independent of the production projector and of its
+    // returned values. A missing field, wrong revision or duplicate fragment fails.
+    const guidance = [
+      "<opencodarr-session-contract>",
+      "Operator-configured task guidance follows. It does not grant permission, establish completion, or authorize continuation.",
+      '{"revision":1,"objective":"synthetic-guardian-objective-123","phase":"Observe","exclusions":["Do not call native owners"],"checkpoint":"Synthetic checkpoint only","state":"ACTIVE"}',
+      "</opencodarr-session-contract>",
+    ].join("\n")
+    expect(result.compactionGuidance).toEqual([{ sessionBound: true, guidance: [guidance] }])
+    expect(result.nextSelected).toEqual([{ sessionBound: true, inputPresent: true, guidance: [guidance] }])
+    expect(result.nextOther).toEqual([{ sessionBound: true, inputPresent: true, guidance: [] }])
   } finally {
     await rm(root, { recursive: true, force: true })
   }

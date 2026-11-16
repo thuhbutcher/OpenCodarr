@@ -1,0 +1,55 @@
+{
+  "sourceArchiveSHA256": "465464f9430c7f339a1dc06441e244c6e26a7fef7663280b512e915051cc2267",
+  "selectedPreimageCommit": "12e0844dc66684b3336a626a0183d91f479d3315",
+  "sixProductFiles": [
+    {
+      "lane": "repair",
+      "path": "packages/plugins/session-guardian/README.md",
+      "approvedArchiveEntry": "opencodarr-hardening/candidate/packages/plugins/session-guardian/README.md",
+      "sha256": "cb08863539ce34be970b91692bac2f3788a95f335858e26b921cb133644510ba",
+      "gitBlobSHA1": "a83e061058d65b829b31ca264f8bb747c8a0aab6",
+      "bytes": 5735
+    },
+    {
+      "lane": "repair",
+      "path": "packages/plugins/session-guardian/RELOAD_SDK_SDC_CODING_ENVELOPE.v1.json",
+      "approvedArchiveEntry": "opencodarr-hardening/candidate/packages/plugins/session-guardian/RELOAD_SDK_SDC_CODING_ENVELOPE.v1.json",
+      "sha256": "65aa051ec246673c884905a992bd000325456aa21a5bc2919a07aa3c50d0837f",
+      "gitBlobSHA1": "577231780f73a122f88a9703eeb0122bdbe9024a",
+      "bytes": 3578
+    },
+    {
+      "lane": "repair",
+      "path": "packages/plugins/session-guardian/index.ts",
+      "approvedArchiveEntry": "opencodarr-hardening/candidate/packages/plugins/session-guardian/index.ts",
+      "sha256": "4490e6c7037f273b09e0ad1f95486f79d33da16b3eefadd98e8adf5f173aba69",
+      "gitBlobSHA1": "502a537d4d0483861ad262444df864d17f46357c",
+      "bytes": 1985
+    },
+    {
+      "lane": "repair",
+      "path": "packages/plugins/session-guardian/reload.test.ts",
+      "approvedArchiveEntry": "opencodarr-hardening/candidate/packages/plugins/session-guardian/reload.test.ts",
+      "sha256": "c6bc569f226caa571b2eb1e17f8c9193c8951038a5e140da073e5ab81f8a3c77",
+      "gitBlobSHA1": "0392baf64867d62c28ed0181ef7df418c7a71a2a",
+      "bytes": 8684
+    },
+    {
+      "lane": "host",
+      "path": "packages/plugins/session-guardian/host.test.ts",
+      "approvedArchiveEntry": "opencodarr-review/postcompaction-candidate/packages/plugins/session-guardian/host.test.ts",
+      "sha256": "68445a8b9097b5b68e460bd631f33de5f5676aa12e89322ffedd8ddc34c67b91",
+      "gitBlobSHA1": "f6eb53ec1d0099cff588d6f7643ee615e1b1c07b",
+      "bytes": 2731
+    },
+    {
+      "lane": "host",
+      "path": "packages/plugins/session-guardian/test/host-fixture.ts",
+      "approvedArchiveEntry": "opencodarr-review/postcompaction-candidate/packages/plugins/session-guardian/test/host-fixture.ts",
+      "sha256": "b358570c0dfb9a7cde34a601b4a32b967a236e6e9dbf99a13d709d745e4c8598",
+      "gitBlobSHA1": "36b94e7c432ceef7bfc105a1e4e572d0a9b69de2",
+      "bytes": 6012
+    }
+  ],
+  "approvalScope": "Exact approved Guardian repair and authored NOT_RUN host-test extension; source publication only; native install and gate acceptance held."
+}

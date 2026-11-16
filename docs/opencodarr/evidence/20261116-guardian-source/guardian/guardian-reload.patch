@@ -1,0 +1,355 @@
+diff --git a/packages/plugins/session-guardian/README.md b/packages/plugins/session-guardian/README.md
+--- a/packages/plugins/session-guardian/README.md
++++ b/packages/plugins/session-guardian/README.md
+@@ -36,3 +36,13 @@
+ ## Selected 2.3.0 source rebase
+ 
+ The current package declares the pinned `@opencode/plugin@2.3.0` target. The earlier 2.1.4/2.2.2 records above are historical occurrences; their results do not transfer to this baseline. See [the migration record](../../../OPENCODARR_REBASE.md) for the exact upstream and carried commits, verification status and remaining limits. The plugin and its pure contract behavior are unchanged by the rebase.
++
++## Reload projection candidate — 2026-11-15
++
++OpenCode's selected 2.3.0 host can restore an earlier plugin after replacement setup fails, or retain it when the replacement module fails to load. Guardian therefore checks the current local plugin inventory at each selected-session context or compaction hook. It projects guidance only when that inventory contains exactly one active Guardian and no failed discovery entry for its exact local path or package target. A package version is not part of this match: the failed replacement may have no resolved version. Missing, ambiguous, failed, or unreadable Guardian inventory suppresses new guidance. An unrelated plugin failure does not suppress it. The check does not poll, retry, or wait for plugin activation.
++
++The inventory check is repeated for each projection, so a later healthy generation can resume guidance. Cleanup marks a generation disposed before removing registrations, preventing an in-flight inventory read from appending its old contract after teardown. Invalid contract options still fail setup, and no contract still leaves the plugin inert.
++
++This boundary only controls new contract guidance. It does not deny session, tool, or model execution; authenticate the contract; retract text already emitted or stored; establish a transaction with a concurrent host reload; or replace host failure reporting. Core's generic fallback policy is unchanged. The normal host inventory continues to report setup or discovery failures.
++
++`reload.test.ts` adds focused public-hook fixture tests for these projection rules. Those fixtures exercise Guardian's actual code with explicitly supplied inventory snapshots; they do not run the real OpenCode registry, supervisor, transport, or a model. Full Bun tests, type checks, and a real-host failed-reload/readback occurrence remain separate verification requirements. The earlier host evidence is not upgraded by these tests. The new occurrence is bound by `RELOAD_SDK_SDC_CODING_ENVELOPE.v1.json`; the original envelope remains historical.
+diff --git a/packages/plugins/session-guardian/RELOAD_SDK_SDC_CODING_ENVELOPE.v1.json b/packages/plugins/session-guardian/RELOAD_SDK_SDC_CODING_ENVELOPE.v1.json
+new file mode 100644
+--- /dev/null
++++ b/packages/plugins/session-guardian/RELOAD_SDK_SDC_CODING_ENVELOPE.v1.json
+@@ -0,0 +1,73 @@
++{
++  "schema": "arrverse.sdk-sdc-coding-envelope.v1",
++  "standardRef": "ARRVERSE.SDK-SDC-CODING@0.1.0-candidate.1",
++  "occurrenceId": "opencodarr.session-guardian.reload-projection.20261115",
++  "taskRef": "OpenCodarr:guardian-reload-projection-candidate",
++  "subject": {
++    "subjectId": "OpenCodarr.session-guardian",
++    "subjectKind": "LOCAL_PLUGIN",
++    "ownerRef": "thuhbutcher/OpenCodarr"
++  },
++  "source": {
++    "repository": "thuhbutcher/OpenCodarr",
++    "ref": "opencodarr-rebase",
++    "commit": "12e0844dc66684b3336a626a0183d91f479d3315",
++    "paths": [
++      "packages/plugins/session-guardian/README.md",
++      "packages/plugins/session-guardian/RELOAD_SDK_SDC_CODING_ENVELOPE.v1.json",
++      "packages/plugins/session-guardian/index.ts",
++      "packages/plugins/session-guardian/reload.test.ts"
++    ]
++  },
++  "sdc": {
++    "packageRef": "thuhbutcher/ArrVerseOfficial#40",
++    "generationRef": "12edcc62b99cccfebf3e4f5cb1bdc3cbbd462feb",
++    "stages": ["GATHER", "BIND", "RESEARCH", "PLAN", "BUILD", "PROVE", "RECEIPT", "LEARN", "RECONCILE"],
++    "minimumNecessaryContext": true
++  },
++  "sdk": {
++    "generationRef": "6a4e9f1dfa395c90624022ace0153756aa624b33",
++    "profile": "LOCAL_INTERNAL",
++    "sdkRequired": true,
++    "contractPackRefs": []
++  },
++  "affectedTags": ["SOURCE", "CONFIG", "RECOVERY", "EVIDENCE"],
++  "templarr": {
++    "disposition": "PATTERN_ONLY",
++    "refs": [
++      "thuhbutcher/OpenCodarr@12e0844dc66684b3336a626a0183d91f479d3315:packages/plugins/session-guardian/index.ts",
++      "anomalyco/opencode@a6b15d33daf6ab7d35569f6d711fdb630b9f04e7:packages/core/src/plugin.ts",
++      "anomalyco/opencode@a6b15d33daf6ab7d35569f6d711fdb630b9f04e7:packages/core/src/plugin/supervisor.ts",
++      "thuhbutcher/ArrVerseOfficial@12edcc62b99cccfebf3e4f5cb1bdc3cbbd462feb:docs/operations/sovereign-software-development-context/PATTERN_CLOSED_DATA_BOUNDARY.md"
++    ],
++    "reason": "Reuse the existing plugin lifecycle and public inventory boundary. This is an owner-local guidance repair, with no new cross-owner contract or shared SDK surface. No Templarr application, native adoption, owner acceptance, or external effect is claimed."
++  },
++  "proof": {
++    "positiveTests": [
++      "Actual Guardian source: one active inventory entry permits selected-session context and compaction without duplicate guidance",
++      "Actual Guardian source: unrelated failures preserve healthy projection and unselected sessions remain untouched"
++    ],
++    "hostileTests": [
++      "Actual Guardian source with synthetic inventory: failed setup and exact-source failed discovery suppress retained guidance",
++      "Actual Guardian source with synthetic inventory: missing, ambiguous, or unreadable inventory suppresses guidance",
++      "Actual Guardian source: invalid configuration is rejected before registration and teardown suppresses an in-flight projection"
++    ],
++    "sharedSdkSurface": false,
++    "parityLanguages": [],
++    "recoveryDisposition": "REQUIRED",
++    "recoveryTests": [
++      "Actual Guardian source with synthetic inventory: later healthy inventory and a new valid revision restore bounded projection",
++      "Full Bun host failed-reload, supervisor, typecheck and native receiving occurrences remain NOT_RUN; exact Git revision gate remains HOLD for partial materialization"
++    ]
++  },
++  "reconciliation": {
++    "targets": ["PROJECTARR", "WIKIARR", "ASA", "BREADCRUMB"],
++    "ownerReadbackRefs": []
++  },
++  "authority": {
++    "sdkGrantsPermission": false,
++    "contextGrantsPermission": false,
++    "effectAuthority": false
++  },
++  "claimState": "AUTHORED"
++}
+diff --git a/packages/plugins/session-guardian/index.ts b/packages/plugins/session-guardian/index.ts
+--- a/packages/plugins/session-guardian/index.ts
++++ b/packages/plugins/session-guardian/index.ts
+@@ -8,14 +8,32 @@
+     async setup(ctx) {
+       const contract = configuredContract(options === undefined ? ctx.options : options)
+       if (!contract) return
+-      const context = await ctx.session.hook("context", (event) => projectContract(event, contract))
++      let disposed = false
++      const project = async (event: Parameters<typeof projectContract>[0]) => {
++        if (disposed || event.sessionID !== contract.sessionID) return
++        // OpenCode can retain the previous generation after failed setup or discovery.
++        // Its current inventory, rather than successful setup alone, bounds this projection.
++        const inventory = await ctx.plugin.list().catch(() => undefined)
++        if (disposed || !inventory) return
++        const entries = inventory.data.filter((entry) => entry.id === "opencodarr.session-guardian")
++        if (entries.length !== 1 || entries[0].state.status !== "active") return
++        const source = entries[0].source
++        if (inventory.data.some((entry) => entry.state.status === "failed" && (
++          (source.type === "local" && entry.source.type === "local" && source.path === entry.source.path) ||
++          (source.type === "package" && entry.source.type === "package" && source.target === entry.source.target)
++        ))) return
++        projectContract(event, contract)
++      }
++      const context = await ctx.session.hook("context", project)
+       try {
+-        const compaction = await ctx.session.hook("compaction", (event) => projectContract(event, contract))
++        const compaction = await ctx.session.hook("compaction", project)
+         return async () => {
++          disposed = true
+           await compaction.dispose()
+           await context.dispose()
+         }
+       } catch (error) {
++        disposed = true
+         await context.dispose()
+         throw error
+       }
+diff --git a/packages/plugins/session-guardian/reload.test.ts b/packages/plugins/session-guardian/reload.test.ts
+new file mode 100644
+--- /dev/null
++++ b/packages/plugins/session-guardian/reload.test.ts
+@@ -0,0 +1,217 @@
++import { test } from "bun:test"
++import assert from "node:assert/strict"
++import type { Plugin } from "@opencode/plugin"
++import { createSessionGuardian } from "./index"
++import type { projectContract } from "./contract"
++
++const id = "opencodarr.session-guardian"
++const source = { type: "local", path: "/fixture/session-guardian" } as const
++const selected = {
++  sessionID: "ses_selected",
++  revision: 1,
++  objective: "first guarded objective",
++  phase: "Observe",
++  exclusions: ["Do not change live services"],
++  state: "ACTIVE",
++}
++type Inventory = Awaited<ReturnType<Plugin.Context["plugin"]["list"]>>["data"]
++type Event = Parameters<typeof projectContract>[0]
++type Hook = (event: Event) => void | Promise<void>
++
++function active(): Inventory {
++  return [{ id, source, features: { server: true }, state: { status: "active" } }]
++}
++
++// This is a minimal public setup/hook fixture, not the OpenCode host or its reload engine.
++// Inventory snapshots correspond to the source-pinned registry and supervisor failure paths.
++function fixture(options: unknown = { contract: selected }) {
++  const hooks = new Map<string, Hook>()
++  const state = {
++    inventory: active(),
++    reads: 0,
++    unreadable: false,
++    rejectCompaction: false,
++    pending: undefined as Promise<void> | undefined,
++  }
++  const context = {
++    options,
++    plugin: {
++      async list() {
++        state.reads++
++        const inventory = state.inventory
++        if (state.pending) await state.pending
++        if (state.unreadable) throw new Error("INVENTORY_UNAVAILABLE")
++        return { location: { directory: "/fixture/workspace" }, data: inventory }
++      },
++    },
++    session: {
++      async hook(name: string, callback: Hook) {
++        if (name === "compaction" && state.rejectCompaction) throw new Error("REGISTRATION_FAILED")
++        hooks.set(name, callback)
++        return { dispose() { hooks.delete(name) } }
++      },
++    },
++  }
++  // No unused service exists in this fixture. Unexpected capability access fails immediately.
++  const scoped = new Proxy(context, {
++    get(target, key) {
++      if (!(key in target)) throw new Error(`UNEXPECTED_HOST_CAPABILITY:${String(key)}`)
++      return Reflect.get(target, key)
++    },
++  }) as unknown as Plugin.Context
++  return {
++    hooks,
++    state,
++    setup: async () => await createSessionGuardian().setup(scoped),
++    async project(name: string, sessionID = selected.sessionID) {
++      const event: Event = { sessionID, system: [{ type: "text", text: "Existing system guidance" }] }
++      const hook = hooks.get(name)
++      assert.ok(hook, `missing ${name} hook`)
++      await hook(event)
++      return event
++    },
++  }
++}
++
++function count(event: Event) {
++  return event.system.filter((part) => part.text.startsWith("<opencodarr-session-contract>")).length
++}
++
++test("active inventory permits selected-session context and compaction without duplicate projection", async () => {
++  const host = fixture()
++  const cleanup = await host.setup()
++  for (const name of ["context", "compaction"]) {
++    const event = await host.project(name)
++    assert.equal(count(event), 1)
++    assert.equal(event.system[0].text, "Existing system guidance")
++    assert.ok(event.system[1].text.includes("does not grant permission"))
++    await host.hooks.get(name)?.(event)
++    assert.equal(count(event), 1)
++  }
++  assert.equal(host.state.reads, 4)
++  await cleanup?.()
++  assert.equal(host.hooks.size, 0)
++})
++
++test("a failed setup inventory prevents the restored old contract from projecting", async () => {
++  const host = fixture()
++  await host.setup()
++  assert.equal(count(await host.project("context")), 1)
++  // Registry activation may restore the previous plugin while reporting the requested one failed.
++  host.state.inventory = [{ id, source, features: { server: true }, state: { status: "failed", error: "SESSION_CONTRACT_INVALID_REVISION" } }]
++  assert.equal(count(await host.project("context")), 0)
++  assert.equal(count(await host.project("compaction")), 0)
++})
++
++test("an anonymous local discovery failure suppresses the retained generation at that exact source", async () => {
++  const host = fixture()
++  await host.setup()
++  host.state.inventory = [...active(), { source, features: { server: true }, state: { status: "failed", error: "IMPORT_FAILED" } }]
++  assert.equal(count(await host.project("context")), 0)
++  assert.equal(count(await host.project("compaction")), 0)
++})
++
++test("package discovery failures match the target independently of the retained version", async () => {
++  const host = fixture()
++  await host.setup()
++  host.state.inventory = [
++    { id, source: { type: "package", target: "@fixture/guardian", version: "1.0.0" }, features: { server: true }, state: { status: "active" } },
++    { source: { type: "package", target: "@fixture/guardian" }, features: { server: true }, state: { status: "failed", error: "IMPORT_FAILED" } },
++  ]
++  assert.equal(count(await host.project("context")), 0)
++})
++
++test("an unrelated local or package failure does not suppress a healthy Guardian", async () => {
++  const host = fixture()
++  await host.setup()
++  host.state.inventory = [
++    ...active(),
++    { source: { type: "local", path: "/fixture/session-guardian-other" }, features: { server: true }, state: { status: "failed", error: "IMPORT_FAILED" } },
++    { source: { type: "package", target: "@fixture/unrelated" }, features: { server: true }, state: { status: "failed", error: "IMPORT_FAILED" } },
++  ]
++  assert.equal(count(await host.project("context")), 1)
++  assert.equal(count(await host.project("compaction")), 1)
++})
++
++test("missing or ambiguous Guardian inventory suppresses guidance", async () => {
++  const host = fixture()
++  await host.setup()
++  for (const inventory of [[], [...active(), ...active()]]) {
++    host.state.inventory = inventory
++    assert.equal(count(await host.project("context")), 0)
++    assert.equal(count(await host.project("compaction")), 0)
++  }
++})
++
++test("unreadable inventory suppresses guidance without treating it as healthy", async () => {
++  const host = fixture()
++  await host.setup()
++  host.state.unreadable = true
++  assert.equal(count(await host.project("context")), 0)
++  assert.equal(count(await host.project("compaction")), 0)
++  assert.equal(host.state.reads, 2)
++})
++
++test("healthy inventory recovery is observed afresh on the next projection", async () => {
++  const host = fixture()
++  await host.setup()
++  host.state.inventory = []
++  assert.equal(count(await host.project("context")), 0)
++  host.state.inventory = active()
++  assert.equal(count(await host.project("context")), 1)
++  host.state.unreadable = true
++  assert.equal(count(await host.project("compaction")), 0)
++  host.state.unreadable = false
++  assert.equal(count(await host.project("compaction")), 1)
++})
++
++test("an unselected session needs no inventory read and receives no contract", async () => {
++  const host = fixture()
++  await host.setup()
++  host.state.unreadable = true
++  assert.equal(count(await host.project("context", "ses_other")), 0)
++  assert.equal(count(await host.project("compaction", "ses_other")), 0)
++  assert.equal(host.state.reads, 0)
++})
++
++test("an absent contract remains inert and invalid options fail before registering a hook", async () => {
++  const absent = fixture({})
++  await absent.setup()
++  assert.equal(absent.hooks.size, 0)
++  assert.equal(absent.state.reads, 0)
++  const invalid = fixture({ contract: { ...selected, revision: 0 } })
++  await assert.rejects(invalid.setup(), /SESSION_CONTRACT_INVALID_REVISION/)
++  assert.equal(invalid.hooks.size, 0)
++})
++
++test("a later valid setup projects only its own successor contract", async () => {
++  const prior = fixture()
++  const cleanup = await prior.setup()
++  await cleanup?.()
++  assert.equal(prior.hooks.size, 0)
++  const next = fixture({ contract: { ...selected, revision: 2, objective: "second guarded objective" } })
++  await next.setup()
++  const event = await next.project("context")
++  assert.equal(count(event), 1)
++  assert.ok(event.system[1].text.includes('"revision":2'))
++  assert.ok(event.system[1].text.includes("second guarded objective"))
++  assert.ok(!event.system[1].text.includes(selected.objective))
++})
++
++test("a disposed generation cannot finish an in-flight inventory read and project later", async () => {
++  const host = fixture()
++  const cleanup = await host.setup()
++  const pending = Promise.withResolvers<void>()
++  host.state.pending = pending.promise
++  const projection = host.project("context")
++  await cleanup?.()
++  pending.resolve()
++  assert.equal(count(await projection), 0)
++})
++
++test("compaction registration failure removes the context hook", async () => {
++  const host = fixture()
++  host.state.rejectCompaction = true
++  await assert.rejects(host.setup(), /REGISTRATION_FAILED/)
++  assert.equal(host.hooks.size, 0)
++})

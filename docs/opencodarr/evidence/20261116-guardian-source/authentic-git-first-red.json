@@ -1,0 +1,18 @@
+{
+  "schema": "opencodarr.authentic-git-object-attempt.v1",
+  "recordedAtUTC": "2026-11-16T00:32:48.872969+00:00",
+  "command": [
+    "python",
+    "/workspace/scratch/aa367cee0262/publication-20261116/opencodarr/materialize-authentic-objects.py"
+  ],
+  "exitCode": 1,
+  "error": "EXACT_COMMIT_BYTES_UNRECOVERABLE:12e0844dc66684b3336a626a0183d91f479d3315",
+  "phase": "Reconstruct exact Git objects from API metadata, before maintained revision gate",
+  "result": "HOLD_NO_VERIFIED_PREIMAGE_COMMIT_OBJECT",
+  "standInObjectWritten": false,
+  "shallowGraftsOrReplaceUsed": false,
+  "maintainedRevisionGateExecuted": false,
+  "fullCheckoutAttempted": false,
+  "scopeCoverageClaim": false,
+  "authority": false
+}

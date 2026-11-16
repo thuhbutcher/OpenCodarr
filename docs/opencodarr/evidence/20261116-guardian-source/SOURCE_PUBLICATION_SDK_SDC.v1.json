@@ -1,0 +1,109 @@
+{
+  "schema": "arrverse.sdk-sdc-coding-envelope.v1",
+  "standardRef": "ARRVERSE.SDK-SDC-CODING@0.1.0-candidate.1",
+  "occurrenceId": "opencodarr.session-guardian.source-publication.20261116",
+  "taskRef": "OpenCodarr:approved-host-test-and-scoped-receipt-publication",
+  "subject": {
+    "subjectId": "OpenCodarr.session-guardian",
+    "subjectKind": "LOCAL_PLUGIN",
+    "ownerRef": "thuhbutcher/OpenCodarr"
+  },
+  "source": {
+    "repository": "thuhbutcher/OpenCodarr",
+    "ref": "opencodarr-rebase",
+    "commit": "dfd3672d9faece5c973958c77aae8cc890c91709",
+    "paths": [
+      "docs/opencodarr/evidence/20261116-guardian-source/README.md",
+      "docs/opencodarr/evidence/20261116-guardian-source/SOURCE_PUBLICATION_SDK_SDC.v1.json",
+      "docs/opencodarr/evidence/20261116-guardian-source/approved-input-verification.json",
+      "docs/opencodarr/evidence/20261116-guardian-source/authentic-git-first-red.json",
+      "docs/opencodarr/evidence/20261116-guardian-source/guardian/evidence/candidate-manifest.json",
+      "docs/opencodarr/evidence/20261116-guardian-source/guardian/evidence/candidate-test-initial.tap",
+      "docs/opencodarr/evidence/20261116-guardian-source/guardian/evidence/first-red.json",
+      "docs/opencodarr/evidence/20261116-guardian-source/guardian/evidence/first-red.tap",
+      "docs/opencodarr/evidence/20261116-guardian-source/guardian/evidence/materialization-manifest.json",
+      "docs/opencodarr/evidence/20261116-guardian-source/guardian/evidence/receipt-correction.json",
+      "docs/opencodarr/evidence/20261116-guardian-source/guardian/evidence/sdk-envelope-validation.log",
+      "docs/opencodarr/evidence/20261116-guardian-source/guardian/evidence/successor.json",
+      "docs/opencodarr/evidence/20261116-guardian-source/guardian/guardian-reload.patch",
+      "docs/opencodarr/evidence/20261116-guardian-source/host-test/POSTCOMPACTION_NOT_RUN_RECEIPT.json",
+      "docs/opencodarr/evidence/20261116-guardian-source/host-test/POSTCOMPACTION_PATCH_MANIFEST.json",
+      "docs/opencodarr/evidence/20261116-guardian-source/host-test/SDK_SDC_POSTCOMPACTION_20261115.v1.json",
+      "docs/opencodarr/evidence/20261116-guardian-source/host-test/SDK_SDC_POSTCOMPACTION_VALIDATION.json",
+      "docs/opencodarr/evidence/20261116-guardian-source/host-test/postcompaction-host-test.patch",
+      "docs/opencodarr/evidence/20261116-guardian-source/repair-ref-readback.json",
+      "packages/plugins/session-guardian/host.test.ts",
+      "packages/plugins/session-guardian/test/host-fixture.ts"
+    ]
+  },
+  "sdc": {
+    "packageRef": "thuhbutcher/ArrVerseOfficial#40",
+    "generationRef": "12edcc62b99cccfebf3e4f5cb1bdc3cbbd462feb",
+    "stages": [
+      "GATHER",
+      "BIND",
+      "RESEARCH",
+      "PLAN",
+      "BUILD",
+      "PROVE",
+      "RECEIPT",
+      "LEARN",
+      "RECONCILE"
+    ],
+    "minimumNecessaryContext": true
+  },
+  "sdk": {
+    "generationRef": "6a4e9f1dfa395c90624022ace0153756aa624b33",
+    "profile": "LOCAL_INTERNAL",
+    "sdkRequired": true,
+    "contractPackRefs": []
+  },
+  "affectedTags": [
+    "SOURCE",
+    "CONFIG",
+    "EVIDENCE",
+    "EVALUATION"
+  ],
+  "templarr": {
+    "disposition": "PATTERN_ONLY",
+    "refs": [
+      "thuhbutcher/OpenCodarr@12e0844dc66684b3336a626a0183d91f479d3315:packages/plugins/session-guardian/host.test.ts",
+      "thuhbutcher/OpenCodarr@12e0844dc66684b3336a626a0183d91f479d3315:packages/plugins/session-guardian/test/host-fixture.ts",
+      "thuhbutcher/OpenCodarr@12e0844dc66684b3336a626a0183d91f479d3315:packages/ai/src/testing.ts",
+      "thuhbutcher/OpenCodarr@12e0844dc66684b3336a626a0183d91f479d3315:packages/plugin/src/effect/session.ts"
+    ],
+    "reason": "Publish the exact approved test extension and historical receipts using existing Guardian lifecycle/TestLLM patterns. This occurrence binds the complete repository path set, including this envelope. The runtime host tests remain NOT_RUN; no native receiving, owner acceptance or Templarr application is claimed."
+  },
+  "proof": {
+    "positiveTests": [
+      "NOT_RUN: host.test.ts / isolated v2 configured host binds guidance to the next primary request after compaction without leaking it",
+      "NOT_RUN: host.test.ts / isolated v2 embedded host binds guidance to the next primary request after compaction without leaking it",
+      "READBACK_REQUIRED: remote committed bytes and changed paths must match the approved staged inputs; this is source publication validation, not runtime execution."
+    ],
+    "hostileTests": [
+      "NOT_RUN: both named keeper cases assert no Guardian contract in the other session's next primary request",
+      "NOT_RUN: both named keeper cases reject missing, duplicate or wrong contract bytes, wrong session binding and missing new input through exact expected arrays",
+      "NOT_RUN: both named keeper cases require actual primary request-kind observations; title and compaction requests cannot satisfy that oracle",
+      "READBACK_REQUIRED: reject a changed branch lease, a mismatching source blob, or an unexpected changed path; preserve first reds and prior receipts."
+    ],
+    "sharedSdkSurface": false,
+    "parityLanguages": [],
+    "recoveryDisposition": "NOT_APPLICABLE",
+    "recoveryReason": "This successor adds test and evidence files only. Reverting its actual source commit restores the prior tree; no native or external operational effect was executed. Product recovery and gate acceptance remain separate."
+  },
+  "reconciliation": {
+    "targets": [
+      "PROJECTARR",
+      "WIKIARR",
+      "ASA",
+      "BREADCRUMB"
+    ],
+    "ownerReadbackRefs": []
+  },
+  "authority": {
+    "sdkGrantsPermission": false,
+    "contextGrantsPermission": false,
+    "effectAuthority": false
+  },
+  "claimState": "AUTHORED"
+}

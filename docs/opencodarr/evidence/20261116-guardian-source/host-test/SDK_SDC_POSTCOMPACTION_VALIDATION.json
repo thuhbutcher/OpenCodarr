@@ -1,0 +1,122 @@
+{
+  "schema": "arrverse.sdk-sdc-coding-envelope-validation-result.v1",
+  "inputSha256": "93aacaed1afcd2d9539e7f1fab7b9f40ad99c23510fc8bfc59023a7cac7ce422",
+  "schemaSha256": "8f4cbd9f0dad92c2898c89d75590d6007884329de5434722d75656be02d0598c",
+  "registrySha256": "ba9981f3baf15851de01abfff6f02c73fbe47459ede9ce0f3a8abb120a7ed314",
+  "contractValid": true,
+  "declaredClaimState": "AUTHORED",
+  "claimsAuthenticated": false,
+  "evidenceRefsResolved": false,
+  "sdkProfile": "LOCAL_INTERNAL",
+  "selectedMembers": [
+    {
+      "subjectId": "Commandarr",
+      "ownerRef": "Commandarr",
+      "tags": [
+        "PROJECT",
+        "INTENT"
+      ],
+      "alwaysForCoding": true,
+      "note": "Governed developer/project intent surface.",
+      "bindingState": "DISCOVERY_ONLY_OWNER_CONTRACT_UNRESOLVED"
+    },
+    {
+      "subjectId": "Reaparr",
+      "ownerRef": "Reaparr",
+      "tags": [
+        "RECONCILIATION"
+      ],
+      "alwaysForCoding": true,
+      "note": "Bounded completion/reconciliation.",
+      "bindingState": "DISCOVERY_ONLY_OWNER_CONTRACT_UNRESOLVED"
+    },
+    {
+      "subjectId": "Projectarr",
+      "ownerRef": "Projectarr",
+      "tags": [
+        "PROJECT",
+        "RECONCILIATION"
+      ],
+      "alwaysForCoding": true,
+      "note": "Project/treatment progress.",
+      "bindingState": "DISCOVERY_ONLY_OWNER_CONTRACT_UNRESOLVED"
+    },
+    {
+      "subjectId": "Wikiarr",
+      "ownerRef": "Wikiarr",
+      "tags": [
+        "KNOWLEDGE",
+        "RECONCILIATION"
+      ],
+      "alwaysForCoding": true,
+      "note": "Feature/decision/provenance knowledge.",
+      "bindingState": "DISCOVERY_ONLY_OWNER_CONTRACT_UNRESOLVED"
+    },
+    {
+      "subjectId": "Workspace",
+      "ownerRef": "Workspace",
+      "tags": [
+        "WORKSPACE",
+        "SOURCE"
+      ],
+      "alwaysForCoding": false,
+      "note": "Workspace role and source/materialization separation; not a new domain owner.",
+      "bindingState": "DISCOVERY_ONLY_OWNER_CONTRACT_UNRESOLVED"
+    },
+    {
+      "subjectId": "Filearr",
+      "ownerRef": "Filearr",
+      "tags": [
+        "SOURCE"
+      ],
+      "alwaysForCoding": false,
+      "note": "Source/file boundary.",
+      "bindingState": "DISCOVERY_ONLY_OWNER_CONTRACT_UNRESOLVED"
+    },
+    {
+      "subjectId": "Notarr",
+      "ownerRef": "Notarr",
+      "tags": [
+        "EVIDENCE"
+      ],
+      "alwaysForCoding": false,
+      "note": "Evidence custody.",
+      "bindingState": "DISCOVERY_ONLY_OWNER_CONTRACT_UNRESOLVED"
+    },
+    {
+      "subjectId": "Testarr",
+      "ownerRef": "Testarr",
+      "tags": [
+        "EVIDENCE",
+        "QUALIFICATION"
+      ],
+      "alwaysForCoding": false,
+      "note": "Independent adjudication.",
+      "bindingState": "DISCOVERY_ONLY_OWNER_CONTRACT_UNRESOLVED"
+    },
+    {
+      "subjectId": "Scene",
+      "ownerRef": "Scene Standards",
+      "tags": [
+        "RELEASE",
+        "EVALUATION"
+      ],
+      "alwaysForCoding": false,
+      "note": "Selected evaluation/release semantics.",
+      "bindingState": "DISCOVERY_ONLY_OWNER_CONTRACT_UNRESOLVED"
+    },
+    {
+      "subjectId": "ConfigYarr",
+      "ownerRef": "ConfigYarr",
+      "tags": [
+        "CONFIG"
+      ],
+      "alwaysForCoding": false,
+      "note": "Configuration boundary.",
+      "bindingState": "DISCOVERY_ONLY_OWNER_CONTRACT_UNRESOLVED"
+    }
+  ],
+  "ownerContractsResolved": false,
+  "authorityEffect": "NONE",
+  "treatmentVerdict": "NOT_EVALUATED"
+}

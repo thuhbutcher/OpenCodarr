@@ -1,0 +1,241 @@
+{
+  "schema": "opencodarr.materialization.v1",
+  "repository": "thuhbutcher/OpenCodarr",
+  "pullRequest": 1,
+  "commit": "12e0844dc66684b3336a626a0183d91f479d3315",
+  "mode": "EXACT_BLOB_SUBSET_NOT_GIT_CHECKOUT",
+  "upstream": {
+    "repository": "anomalyco/opencode",
+    "commit": "a6b15d33daf6ab7d35569f6d711fdb630b9f04e7",
+    "byteIdenticalPaths": [
+      "packages/core/src/plugin.ts",
+      "packages/core/src/plugin/supervisor.ts"
+    ]
+  },
+  "entries": [
+    {
+      "path": "AGENTS.md",
+      "gitBlobSha1": "7ce72dcb52c9bccdcd30de04754f0379d3d257c8",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/AGENTS.md",
+      "expectedBytes": 18549,
+      "sha256": "bc97fe08db9b84a48a61ed2f500e9ad45edcf407cd2b4db46850beb60aa3a445",
+      "gitBlobVerified": true
+    },
+    {
+      "path": ".opencode/skills/unit-tests/SKILL.md",
+      "gitBlobSha1": "b49acf1db81cd4820bc7043465dbd6ae67625e52",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/.opencode/skills/unit-tests/SKILL.md",
+      "expectedBytes": 22568,
+      "sha256": "31fb5d19b3bc0268de9e445db4a0b75d746b1d9598ccfe46edbda3b2da797ee5",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "package.json",
+      "gitBlobSha1": "be068aa103ad754dc3aef6e8c35678f220e0a42a",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/package.json",
+      "expectedBytes": 7260,
+      "sha256": "0b257c5382b162df7e3016d874e0ee7578ba5428416b62dbf936cbb21a9e9054",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/plugins/session-guardian/contract.ts",
+      "gitBlobSha1": "c7328d1d9a30070d9e13c873bf62a21333f76d4d",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/plugins/session-guardian/contract.ts",
+      "expectedBytes": 3762,
+      "sha256": "5496fe1fd69126e8987b32c90e9c85b53f8e760ccb700adb8de40bdbd62df665",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/plugins/session-guardian/contract.test.ts",
+      "gitBlobSha1": "f914e79d84a6b3696768446965dcb80f1cd99b2c",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/plugins/session-guardian/contract.test.ts",
+      "expectedBytes": 3861,
+      "sha256": "a03659bf7452cd6c2ea78c4cf0ed6c0d9648e9dd647cd1e2de6476037b34a792",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/plugins/session-guardian/index.ts",
+      "gitBlobSha1": "754fe7ba11f0c579c8b0b9410a25ca34fffcb39f",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/plugins/session-guardian/index.ts",
+      "expectedBytes": 937,
+      "sha256": "03591fb4709083e3bba4701256123cfe6e5adaf58ce64bc3456c44d123f8827c",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/plugins/session-guardian/host.test.ts",
+      "gitBlobSha1": "467d432c3fbe6d258f74a689772dc75fc273591f",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/plugins/session-guardian/host.test.ts",
+      "expectedBytes": 1822,
+      "sha256": "268222531b52174bbd87b14f8716b2cc82d0945b6eae6f41033695ada8601619",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/plugins/session-guardian/test/host-fixture.ts",
+      "gitBlobSha1": "80c223b327cee3d748c973e1b4e4f70d90462bfd",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/plugins/session-guardian/test/host-fixture.ts",
+      "expectedBytes": 3688,
+      "sha256": "2413eb82cbd90b3f8f788a9374c8d2ab9078624ab6737e5cfd15fb985d9f8b91",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/plugins/session-guardian/README.md",
+      "gitBlobSha1": "be42067a77f4d54342b5046905d6bb498cda0351",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/plugins/session-guardian/README.md",
+      "expectedBytes": 3689,
+      "sha256": "73004effd2bd88b0f54b63d83be3dfacf656d988698cce7de326399be478d25d",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/plugins/session-guardian/package.json",
+      "gitBlobSha1": "402f0b74a66325369458bd094f4add69d0770193",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/plugins/session-guardian/package.json",
+      "expectedBytes": 683,
+      "sha256": "f569c21d055164888fea3fc26c2cf76c2b7e8f3f44f869e01815678579ae8ed0",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/plugins/session-guardian/tsconfig.json",
+      "gitBlobSha1": "6581b8b7f9cc54fa000553d677ab598af3d5b7d1",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/plugins/session-guardian/tsconfig.json",
+      "expectedBytes": 318,
+      "sha256": "f005fdc63cecac119385080581116c2a5ee206273ded22b1329f803a1292c72b",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/plugins/session-guardian/SDK_SDC_CODING_ENVELOPE.v1.json",
+      "gitBlobSha1": "5cdc978692a480da746a28951366a35e74c07e48",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/plugins/session-guardian/SDK_SDC_CODING_ENVELOPE.v1.json",
+      "expectedBytes": 3100,
+      "sha256": "24ba0c2cb4d33c09d2f22e0da32957c9367815caf88961cc8f5d15844d6c6728",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/plugin/src/promise/plugin.ts",
+      "gitBlobSha1": "6e22d0547e8276ae5c867782a026576262f40424",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/plugin/src/promise/plugin.ts",
+      "expectedBytes": 2782,
+      "sha256": "b408afd829def2965aa0fff57b5136803f82e90bf1239f8d70a587f9985bfd08",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/plugin/src/promise/adapter.ts",
+      "gitBlobSha1": "ec91156ba4622aae349ef8f9bafa7e08d41c2627",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/plugin/src/promise/adapter.ts",
+      "expectedBytes": 34608,
+      "sha256": "8f438ec2658da3ab5c9ea295ba2dd318c72909778c8615dd64b893bea4031ee9",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/plugin/src/promise/session.ts",
+      "gitBlobSha1": "93f7a0d69df3ee9c296c8533278d8d5dd031b08e",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/plugin/src/promise/session.ts",
+      "expectedBytes": 8343,
+      "sha256": "3cc1a007438f1fd085a62174f2591a13e9ecd9830208d87674522179f7bf41c8",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/core/src/plugin.ts",
+      "gitBlobSha1": "d6b11356ed18bcf8dc6afa6606c0dc72d1fffd52",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/core/src/plugin.ts",
+      "expectedBytes": 13439,
+      "sha256": "4a4608df439bfd3fd1f548b283282e3fc2994ffe1c09c54aaadde61208cb0b08",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/core/src/plugin/supervisor.ts",
+      "gitBlobSha1": "c5f320e4c80073b1772b93ea3e1ff2ea41606ec9",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/core/src/plugin/supervisor.ts",
+      "expectedBytes": 10568,
+      "sha256": "160341c6f193e6fb0d1b709200485fab6a6b30fe4f1eae6037d21acc732b4745",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/core/src/plugin/module.ts",
+      "gitBlobSha1": "e450290f2cf2f01368959688002a635e6f16912e",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/core/src/plugin/module.ts",
+      "expectedBytes": 8387,
+      "sha256": "b86b6f84b06ba89796618ee36db1bcb7364200107fa80e0f31296645804a1bb2",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/core/src/plugin/host.ts",
+      "gitBlobSha1": "19a163d9aee0d8f7cd149d0553f983ee0dd42b99",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/core/src/plugin/host.ts",
+      "expectedBytes": 29372,
+      "sha256": "09e1543a66456b64d48f3be06f7860abc174c9931968fd1830c9750532458705",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/core/src/plugin/service.ts",
+      "gitBlobSha1": "d647969c8ab311d5656fe68232d6d55b74788bfc",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/core/src/plugin/service.ts",
+      "expectedBytes": 2288,
+      "sha256": "1e7677f29d91f1d61a9f3f9a1ab9f493624f04388592352a9e6dd6873d9fc2a6",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/core/src/plugin/hooks.ts",
+      "gitBlobSha1": "1325837f9d5864b2619b795c2cd1493d291786d1",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/core/src/plugin/hooks.ts",
+      "expectedBytes": 4414,
+      "sha256": "2e475ccada7437c648d81c16403671deeb2de74517e4b05a397c5c2513cbbe48",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/core/test/plugin.test.ts",
+      "gitBlobSha1": "e4731c8bc7da61e8e936fa13287c39e396b27fa0",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/core/test/plugin.test.ts",
+      "expectedBytes": 28089,
+      "sha256": "2379b3e68557ec1e45372d9aa24e8a208f2d74f0e21cca81dcf463cef2b211d7",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/core/test/plugin/supervisor-reload.test.ts",
+      "gitBlobSha1": "2284fe7986260df09db5324dbe83a7b188e1afa0",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/core/test/plugin/supervisor-reload.test.ts",
+      "expectedBytes": 17716,
+      "sha256": "3c3ffc40be2975b86a2ad8e38f98a55648ae7345315edd6148f007cc1d148727",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/core/test/plugin-failure.test.ts",
+      "gitBlobSha1": "a800b5d85782dd089ef17457d8926e0c42613563",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/core/test/plugin-failure.test.ts",
+      "expectedBytes": 12414,
+      "sha256": "f7c1dd4b6d4722f3bc97d7b663fbbd9de7992ed464573b43cd8e8430ebd642e6",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/schema/src/plugin.ts",
+      "gitBlobSha1": "78fcc23cad0301398a41dd41b2e2056e65a5751f",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/schema/src/plugin.ts",
+      "expectedBytes": 2447,
+      "sha256": "b453a0749f0213f141c29500e4033e2a0008e72d758ac97711310f053fd23d6a",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/schema/src/location.ts",
+      "gitBlobSha1": "205329e5fcaf99a87664599f289b462b9b878347",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/schema/src/location.ts",
+      "expectedBytes": 1216,
+      "sha256": "cc899b5b9430c1edf62f353c8f49611a382511a544c09889e2da24f9ab2ddec4",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/protocol/src/groups/plugin.ts",
+      "gitBlobSha1": "3245b3438475bf69d9f04d56104541f19ae83a72",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/protocol/src/groups/plugin.ts",
+      "expectedBytes": 3010,
+      "sha256": "8e810c744292ac8b1e62ce59578aca50e8add89afd73f623178c2c733ea18a43",
+      "gitBlobVerified": true
+    },
+    {
+      "path": "packages/client/src/promise/api.ts",
+      "gitBlobSha1": "2c3d7d67c1147340e86ad588287c8e9730b26fcd",
+      "url": "https://github.com/thuhbutcher/OpenCodarr/blob/12e0844dc66684b3336a626a0183d91f479d3315/packages/client/src/promise/api.ts",
+      "expectedBytes": 1245,
+      "sha256": "ab9ef30c73fcaa855179d855f8bfad5fa427c7f08f646b47d4e4686e942ea65a",
+      "gitBlobVerified": true
+    }
+  ]
+}

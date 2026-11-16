@@ -1,0 +1,88 @@
+{
+  "schema": "arrverse.sdk-sdc-coding-envelope.v1",
+  "standardRef": "ARRVERSE.SDK-SDC-CODING@0.1.0-candidate.1",
+  "occurrenceId": "opencodarr.session-guardian.postcompaction-test.20261115",
+  "taskRef": "OpenCodarr:postcompaction-primary-request-test-candidate",
+  "subject": {
+    "subjectId": "OpenCodarr.session-guardian",
+    "subjectKind": "LOCAL_PLUGIN",
+    "ownerRef": "thuhbutcher/OpenCodarr"
+  },
+  "source": {
+    "repository": "thuhbutcher/OpenCodarr",
+    "ref": "12e0844dc66684b3336a626a0183d91f479d3315",
+    "commit": "12e0844dc66684b3336a626a0183d91f479d3315",
+    "paths": [
+      "packages/plugins/session-guardian/host.test.ts",
+      "packages/plugins/session-guardian/test/host-fixture.ts"
+    ]
+  },
+  "sdc": {
+    "packageRef": "thuhbutcher/ArrVerseOfficial#40",
+    "generationRef": "12edcc62b99cccfebf3e4f5cb1bdc3cbbd462feb",
+    "stages": [
+      "GATHER",
+      "BIND",
+      "RESEARCH",
+      "PLAN",
+      "BUILD",
+      "PROVE",
+      "RECEIPT",
+      "LEARN",
+      "RECONCILE"
+    ],
+    "minimumNecessaryContext": true
+  },
+  "sdk": {
+    "generationRef": "6a4e9f1dfa395c90624022ace0153756aa624b33",
+    "profile": "LOCAL_INTERNAL",
+    "sdkRequired": true,
+    "contractPackRefs": []
+  },
+  "affectedTags": [
+    "SOURCE",
+    "CONFIG",
+    "EVIDENCE",
+    "EVALUATION"
+  ],
+  "templarr": {
+    "disposition": "PATTERN_ONLY",
+    "refs": [
+      "thuhbutcher/OpenCodarr@12e0844dc66684b3336a626a0183d91f479d3315:packages/plugins/session-guardian/host.test.ts",
+      "thuhbutcher/OpenCodarr@12e0844dc66684b3336a626a0183d91f479d3315:packages/plugins/session-guardian/test/host-fixture.ts",
+      "thuhbutcher/OpenCodarr@12e0844dc66684b3336a626a0183d91f479d3315:packages/ai/src/testing.ts",
+      "thuhbutcher/OpenCodarr@12e0844dc66684b3336a626a0183d91f479d3315:packages/plugin/src/effect/session.ts"
+    ],
+    "reason": "Refine the existing configured/embedded keeper cases using the actual TestLLM capture and public model.request kind/header contract. This is test-only owner-local preparation with no shared SDK change, real provider wire, cross-owner effect or Templarr admission. The envelope is an external review sidecar; it is not a third product patch path."
+  },
+  "proof": {
+    "positiveTests": [
+      "NOT_RUN: host.test.ts / isolated v2 configured host binds guidance to the next primary request after compaction without leaking it",
+      "NOT_RUN: host.test.ts / isolated v2 embedded host binds guidance to the next primary request after compaction without leaking it"
+    ],
+    "hostileTests": [
+      "NOT_RUN: both named keeper cases assert no Guardian contract in the other session's next primary request",
+      "NOT_RUN: both named keeper cases reject missing, duplicate or wrong contract bytes, wrong session binding and missing new input through exact expected arrays",
+      "NOT_RUN: both named keeper cases require actual primary request-kind observations; title and compaction requests cannot satisfy that oracle"
+    ],
+    "sharedSdkSurface": false,
+    "parityLanguages": [],
+    "recoveryDisposition": "NOT_APPLICABLE",
+    "recoveryReason": "This candidate changes tests only and creates no production state transition or external effect to recover. Discarding the patch restores the two pinned preimages. The successful-compaction continuation oracle is authored and NOT_RUN; failure/interruption, native restart and owner recovery remain separate unexecuted obligations."
+  },
+  "reconciliation": {
+    "targets": [
+      "PROJECTARR",
+      "WIKIARR",
+      "ASA",
+      "BREADCRUMB"
+    ],
+    "ownerReadbackRefs": []
+  },
+  "authority": {
+    "sdkGrantsPermission": false,
+    "contextGrantsPermission": false,
+    "effectAuthority": false
+  },
+  "claimState": "AUTHORED"
+}
