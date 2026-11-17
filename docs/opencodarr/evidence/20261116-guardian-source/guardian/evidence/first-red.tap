@@ -1,0 +1,162 @@
+# RUNTIME_BOUNDARY {"selection":"pristine","node":"v24.22.1","sourceRoot":"/workspace/scratch/aa367cee0262/opencodarr-hardening-20261115/pristine/packages/plugins/session-guardian","host":"SYNTHETIC_PUBLIC_HOOK_FIXTURE","actualCoreHostExecuted":false,"bunExecuted":false,"providerCalls":0,"nativeProof":false}
+✖ active inventory permits selected-session context and compaction without duplicate projection (5.802327ms)
+✖ a failed setup inventory prevents the restored old contract from projecting (0.579985ms)
+✖ an anonymous local discovery failure suppresses the retained generation at that exact source (0.460261ms)
+✖ package discovery failures match the target independently of the retained version (0.640848ms)
+✔ an unrelated local or package failure does not suppress a healthy Guardian (0.929964ms)
+✖ missing or ambiguous Guardian inventory suppresses guidance (0.647752ms)
+✖ unreadable inventory suppresses guidance without treating it as healthy (0.479665ms)
+✖ healthy inventory recovery is observed afresh on the next projection (0.592492ms)
+✔ an unselected session needs no inventory read and receives no contract (0.601512ms)
+✔ an absent contract remains inert and invalid options fail before registering a hook (1.719831ms)
+✔ a later valid setup projects only its own successor contract (0.508039ms)
+✖ a disposed generation cannot finish an in-flight inventory read and project later (1.22621ms)
+✔ compaction registration failure removes the context hook (0.626793ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 5
+ℹ fail 8
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 28.191554
+
+✖ failing tests:
+
+test at reload.test.ts:80:1
+✖ active inventory permits selected-session context and compaction without duplicate projection (5.802327ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 4
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/aa367cee0262/opencodarr-hardening-20261115/candidate/packages/plugins/session-guardian/reload.test.ts:91:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 4,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at reload.test.ts:96:1
+✖ a failed setup inventory prevents the restored old contract from projecting (0.579985ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/aa367cee0262/opencodarr-hardening-20261115/candidate/packages/plugins/session-guardian/reload.test.ts:102:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at reload.test.ts:106:1
+✖ an anonymous local discovery failure suppresses the retained generation at that exact source (0.460261ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/aa367cee0262/opencodarr-hardening-20261115/candidate/packages/plugins/session-guardian/reload.test.ts:110:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at reload.test.ts:114:1
+✖ package discovery failures match the target independently of the retained version (0.640848ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/aa367cee0262/opencodarr-hardening-20261115/candidate/packages/plugins/session-guardian/reload.test.ts:121:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at reload.test.ts:136:1
+✖ missing or ambiguous Guardian inventory suppresses guidance (0.647752ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/aa367cee0262/opencodarr-hardening-20261115/candidate/packages/plugins/session-guardian/reload.test.ts:141:12)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at reload.test.ts:146:1
+✖ unreadable inventory suppresses guidance without treating it as healthy (0.479665ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/aa367cee0262/opencodarr-hardening-20261115/candidate/packages/plugins/session-guardian/reload.test.ts:150:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at reload.test.ts:155:1
+✖ healthy inventory recovery is observed afresh on the next projection (0.592492ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/aa367cee0262/opencodarr-hardening-20261115/candidate/packages/plugins/session-guardian/reload.test.ts:159:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at reload.test.ts:201:1
+✖ a disposed generation cannot finish an in-flight inventory read and project later (1.22621ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/aa367cee0262/opencodarr-hardening-20261115/candidate/packages/plugins/session-guardian/reload.test.ts:209:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+(node:6) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)

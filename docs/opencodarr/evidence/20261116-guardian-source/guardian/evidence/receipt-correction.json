@@ -1,0 +1,90 @@
+{
+  "schema": "opencodarr.receipt-metadata-correction.v1",
+  "createdAtUTC": "2026-11-15T23:55:55.559570+00:00",
+  "artifactRootAtExecution": "/workspace/scratch/aa367cee0262/opencodarr-hardening-20261115",
+  "reason": "The original receipt command fields normalized the script path relative to the artifact root, but their cwd fields were relative to the Guardian package. That combination cannot directly replay. Both actual subprocess calls used an absolute Node executable and absolute script path.",
+  "corrections": [
+    {
+      "originalReceipt": "evidence/first-red.json",
+      "originalReceiptSHA256": "bccbe875d1711e50244211b7cb28eb0c5f632d68a2b820dafa592bb19755afe6",
+      "recordedCommand": [
+        "node",
+        "tools/run-regression.mjs",
+        "pristine"
+      ],
+      "recordedCwd": "candidate/packages/plugins/session-guardian",
+      "exactExecutedCommand": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "/workspace/scratch/aa367cee0262/opencodarr-hardening-20261115/tools/run-regression.mjs",
+        "pristine"
+      ],
+      "exactExecutedCwd": "/workspace/scratch/aa367cee0262/opencodarr-hardening-20261115/candidate/packages/plugins/session-guardian",
+      "outputLog": "evidence/first-red.tap",
+      "outputLogSHA256": "66d3c1d8470f9ff96703b323b5cc4d861c2db3318cf0f9fac5f928a92635ae3a",
+      "inputSHA256": {
+        "pristine/packages/plugins/session-guardian/index.ts": "03591fb4709083e3bba4701256123cfe6e5adaf58ce64bc3456c44d123f8827c",
+        "pristine/packages/plugins/session-guardian/contract.ts": "5496fe1fd69126e8987b32c90e9c85b53f8e760ccb700adb8de40bdbd62df665",
+        "candidate/packages/plugins/session-guardian/reload.test.ts": "c6bc569f226caa571b2eb1e17f8c9193c8951038a5e140da073e5ab81f8a3c77",
+        "tools/run-regression.mjs": "e342c50d68679cfcbbfd1b882af2708e0c29504d943facdce2ec51f4c744003a"
+      },
+      "recoveryBasis": "Recovered from the actual Python subprocess.run argument list and cwd in this agent's executed tool history; CODEX_PRIMARY_RUNTIME_NODE was read earlier as the absolute executable recorded here.",
+      "newTestRun": false
+    },
+    {
+      "originalReceipt": "evidence/successor.json",
+      "originalReceiptSHA256": "598f7baadf3895b3ce111a60812363f1ff037a0465d1391c968b76a217a07b2f",
+      "recordedCommand": [
+        "node",
+        "--test-reporter=tap",
+        "tools/run-regression.mjs",
+        "candidate"
+      ],
+      "recordedCwd": "candidate/packages/plugins/session-guardian",
+      "exactExecutedCommand": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "--test-reporter=tap",
+        "/workspace/scratch/aa367cee0262/opencodarr-hardening-20261115/tools/run-regression.mjs",
+        "candidate"
+      ],
+      "exactExecutedCwd": "/workspace/scratch/aa367cee0262/opencodarr-hardening-20261115/candidate/packages/plugins/session-guardian",
+      "outputLog": "evidence/candidate-test-initial.tap",
+      "outputLogSHA256": "3719efbdbbfa4374bc7b6717ba3408529db1c1c7de15f6ed98ff52df962febaf",
+      "inputSHA256": {
+        "candidate/packages/plugins/session-guardian/index.ts": "4490e6c7037f273b09e0ad1f95486f79d33da16b3eefadd98e8adf5f173aba69",
+        "candidate/packages/plugins/session-guardian/contract.ts": "5496fe1fd69126e8987b32c90e9c85b53f8e760ccb700adb8de40bdbd62df665",
+        "candidate/packages/plugins/session-guardian/reload.test.ts": "c6bc569f226caa571b2eb1e17f8c9193c8951038a5e140da073e5ab81f8a3c77",
+        "pristine/packages/plugin/src/promise/plugin.ts": "b408afd829def2965aa0fff57b5136803f82e90bf1239f8d70a587f9985bfd08",
+        "tools/run-regression.mjs": "e342c50d68679cfcbbfd1b882af2708e0c29504d943facdce2ec51f4c744003a"
+      },
+      "recoveryBasis": "Recovered from the actual Python subprocess.run argument list and cwd in this agent's executed tool history; CODEX_PRIMARY_RUNTIME_NODE was read earlier as the absolute executable recorded here.",
+      "newTestRun": false
+    }
+  ],
+  "sourceIdentityClarification": {
+    "sourceCommit": "12e0844dc66684b3336a626a0183d91f479d3315",
+    "sourceCommitMeaning": "Selected target/source preimage, not a published or executed candidate commit. The first-red run loads pristine Guardian modules at that preimage and authored tests; the successor loads local candidate Guardian modules.",
+    "publishedCandidateCommit": null,
+    "candidateIdentity": "The named-file inputSHA256 set in successor.json, repeated above. Candidate content was executed through the documented Node source-test adapter.",
+    "fullGitCheckoutOrAncestryValidation": false
+  },
+  "captureSemantics": {
+    "method": "Python subprocess.run(..., capture_output=True, text=True)",
+    "logAssembly": "stdout followed by stderr, not a merged chronological stream"
+  },
+  "preservedSHA256": {
+    "evidence/first-red.json": "bccbe875d1711e50244211b7cb28eb0c5f632d68a2b820dafa592bb19755afe6",
+    "evidence/first-red.tap": "66d3c1d8470f9ff96703b323b5cc4d861c2db3318cf0f9fac5f928a92635ae3a",
+    "evidence/successor.json": "598f7baadf3895b3ce111a60812363f1ff037a0465d1391c968b76a217a07b2f",
+    "evidence/candidate-test-initial.tap": "3719efbdbbfa4374bc7b6717ba3408529db1c1c7de15f6ed98ff52df962febaf",
+    "guardian-reload.patch": "75fb7334a50d9638edc9378ddbb8e446a7c63a3719cd58fcc7bb410b687066e6",
+    "candidate/packages/plugins/session-guardian/index.ts": "4490e6c7037f273b09e0ad1f95486f79d33da16b3eefadd98e8adf5f173aba69",
+    "candidate/packages/plugins/session-guardian/reload.test.ts": "c6bc569f226caa571b2eb1e17f8c9193c8951038a5e140da073e5ab81f8a3c77"
+  },
+  "originalReceiptBytesRewritten": false,
+  "originalLogBytesRewritten": false,
+  "patchBytesRewritten": false,
+  "sourceOrTestsChanged": false,
+  "rerunExecuted": false,
+  "nativeProof": false,
+  "authority": false
+}

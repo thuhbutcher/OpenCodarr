@@ -1,0 +1,46 @@
+{
+  "schema": "opencodarr.candidate-delta.v1",
+  "createdAtUTC": "2026-11-15T23:52:23.781490+00:00",
+  "sourceCommit": "12e0844dc66684b3336a626a0183d91f479d3315",
+  "sourceMaterialization": "EXACT_BLOB_SUBSET_NOT_GIT_CHECKOUT",
+  "sourceManifestSHA256": "0037caca51fccd242f1678e82eb00be45140cc47e7b1cc5e12be00d4bc9498ee",
+  "patch": "guardian-reload.patch",
+  "patchSHA256": "75fb7334a50d9638edc9378ddbb8e446a7c63a3719cd58fcc7bb410b687066e6",
+  "changes": [
+    {
+      "path": "packages/plugins/session-guardian/README.md",
+      "change": "MODIFIED",
+      "beforeSHA256": "73004effd2bd88b0f54b63d83be3dfacf656d988698cce7de326399be478d25d",
+      "beforeGitBlobSHA1": "be42067a77f4d54342b5046905d6bb498cda0351",
+      "afterSHA256": "cb08863539ce34be970b91692bac2f3788a95f335858e26b921cb133644510ba",
+      "afterGitBlobSHA1": "a83e061058d65b829b31ca264f8bb747c8a0aab6"
+    },
+    {
+      "path": "packages/plugins/session-guardian/RELOAD_SDK_SDC_CODING_ENVELOPE.v1.json",
+      "change": "ADDED",
+      "beforeSHA256": null,
+      "beforeGitBlobSHA1": null,
+      "afterSHA256": "65aa051ec246673c884905a992bd000325456aa21a5bc2919a07aa3c50d0837f",
+      "afterGitBlobSHA1": "577231780f73a122f88a9703eeb0122bdbe9024a"
+    },
+    {
+      "path": "packages/plugins/session-guardian/index.ts",
+      "change": "MODIFIED",
+      "beforeSHA256": "03591fb4709083e3bba4701256123cfe6e5adaf58ce64bc3456c44d123f8827c",
+      "beforeGitBlobSHA1": "754fe7ba11f0c579c8b0b9410a25ca34fffcb39f",
+      "afterSHA256": "4490e6c7037f273b09e0ad1f95486f79d33da16b3eefadd98e8adf5f173aba69",
+      "afterGitBlobSHA1": "502a537d4d0483861ad262444df864d17f46357c"
+    },
+    {
+      "path": "packages/plugins/session-guardian/reload.test.ts",
+      "change": "ADDED",
+      "beforeSHA256": null,
+      "beforeGitBlobSHA1": null,
+      "afterSHA256": "c6bc569f226caa571b2eb1e17f8c9193c8951038a5e140da073e5ab81f8a3c77",
+      "afterGitBlobSHA1": "0392baf64867d62c28ed0181ef7df418c7a71a2a"
+    }
+  ],
+  "gitRevisionScopeGate": "HOLD_NO_GIT_ANCESTRY",
+  "ownerApplied": false,
+  "authority": false
+}

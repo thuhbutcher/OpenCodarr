@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/bun/tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "types": ["bun"],
+    "noUncheckedIndexedAccess": false,
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": ["index.ts", "contract.ts", "*.test.ts", "test/**/*.ts"]
+}

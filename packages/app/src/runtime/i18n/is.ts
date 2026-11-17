@@ -72,7 +72,7 @@ const desktop = [
 ]
 
 export const dict = {
-  ...Object.fromEntries(DESKTOP_NATIVE_KEYS.map((key, index) => [key, desktop[index]])),
+  ...Object.fromEntries(desktop.map((value, index) => [DESKTOP_NATIVE_KEYS[index], value])),
   "command.category.suggested": "Tillögur",
   "command.category.view": "Skoða",
   "command.category.project": "Verkefni",
@@ -348,7 +348,6 @@ export const dict = {
   "session.new.project.search": "Leita að verkefnum",
   "session.new.project.add": "Bæta við verkefni",
   "session.new.workspace.runIn": "Keyra setu í",
-  "session.new.workspace.triggerLocal": "Staðbundið",
   "session.new.workspace.local": "Staðbundin geymsla",
   "session.new.git.none": "Engin Git",
   "session.header.open.finder": "Finder",

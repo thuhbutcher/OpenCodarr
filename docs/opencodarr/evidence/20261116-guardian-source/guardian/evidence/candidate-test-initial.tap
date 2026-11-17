@@ -1,0 +1,91 @@
+# RUNTIME_BOUNDARY {"selection":"candidate","node":"v24.22.1","sourceRoot":"/workspace/scratch/aa367cee0262/opencodarr-hardening-20261115/candidate/packages/plugins/session-guardian","host":"SYNTHETIC_PUBLIC_HOOK_FIXTURE","actualCoreHostExecuted":false,"bunExecuted":false,"providerCalls":0,"nativeProof":false}
+TAP version 13
+# Subtest: active inventory permits selected-session context and compaction without duplicate projection
+ok 1 - active inventory permits selected-session context and compaction without duplicate projection
+  ---
+  duration_ms: 3.636813
+  type: 'test'
+  ...
+# Subtest: a failed setup inventory prevents the restored old contract from projecting
+ok 2 - a failed setup inventory prevents the restored old contract from projecting
+  ---
+  duration_ms: 0.430462
+  type: 'test'
+  ...
+# Subtest: an anonymous local discovery failure suppresses the retained generation at that exact source
+ok 3 - an anonymous local discovery failure suppresses the retained generation at that exact source
+  ---
+  duration_ms: 0.397897
+  type: 'test'
+  ...
+# Subtest: package discovery failures match the target independently of the retained version
+ok 4 - package discovery failures match the target independently of the retained version
+  ---
+  duration_ms: 0.445729
+  type: 'test'
+  ...
+# Subtest: an unrelated local or package failure does not suppress a healthy Guardian
+ok 5 - an unrelated local or package failure does not suppress a healthy Guardian
+  ---
+  duration_ms: 0.42131
+  type: 'test'
+  ...
+# Subtest: missing or ambiguous Guardian inventory suppresses guidance
+ok 6 - missing or ambiguous Guardian inventory suppresses guidance
+  ---
+  duration_ms: 0.431247
+  type: 'test'
+  ...
+# Subtest: unreadable inventory suppresses guidance without treating it as healthy
+ok 7 - unreadable inventory suppresses guidance without treating it as healthy
+  ---
+  duration_ms: 0.610672
+  type: 'test'
+  ...
+# Subtest: healthy inventory recovery is observed afresh on the next projection
+ok 8 - healthy inventory recovery is observed afresh on the next projection
+  ---
+  duration_ms: 0.719128
+  type: 'test'
+  ...
+# Subtest: an unselected session needs no inventory read and receives no contract
+ok 9 - an unselected session needs no inventory read and receives no contract
+  ---
+  duration_ms: 0.453548
+  type: 'test'
+  ...
+# Subtest: an absent contract remains inert and invalid options fail before registering a hook
+ok 10 - an absent contract remains inert and invalid options fail before registering a hook
+  ---
+  duration_ms: 1.020052
+  type: 'test'
+  ...
+# Subtest: a later valid setup projects only its own successor contract
+ok 11 - a later valid setup projects only its own successor contract
+  ---
+  duration_ms: 0.561724
+  type: 'test'
+  ...
+# Subtest: a disposed generation cannot finish an in-flight inventory read and project later
+ok 12 - a disposed generation cannot finish an in-flight inventory read and project later
+  ---
+  duration_ms: 0.301813
+  type: 'test'
+  ...
+# Subtest: compaction registration failure removes the context hook
+ok 13 - compaction registration failure removes the context hook
+  ---
+  duration_ms: 0.316929
+  type: 'test'
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 28.873622
+(node:6) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)

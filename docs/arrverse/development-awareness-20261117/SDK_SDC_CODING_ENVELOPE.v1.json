@@ -1,0 +1,94 @@
+{
+  "schema": "arrverse.sdk-sdc-coding-envelope.v1",
+  "standardRef": "ARRVERSE.SDK-SDC-CODING@0.1.0-candidate.1",
+  "occurrenceId": "development-awareness-20261117-opencodarr",
+  "taskRef": "https://github.com/thuhbutcher/OpenCodarr/pull/1",
+  "subject": {
+    "subjectId": "OpenCodarr",
+    "subjectKind": "Arr",
+    "ownerRef": "https://github.com/thuhbutcher/OpenCodarr/pull/1"
+  },
+  "source": {
+    "repository": "thuhbutcher/OpenCodarr",
+    "ref": "opencodarr-rebase",
+    "commit": "edc9c135867fece67e9564e60e2f3cfa014e3fef",
+    "paths": [
+      "AGENTS.md",
+      "docs/arrverse/DEVELOPMENT_SERVICE_HANDBOOK.binding.json",
+      "docs/arrverse/DEVELOPMENT_SERVICE_HANDBOOK.md",
+      "docs/arrverse/development-awareness-20261117/SDK_SDC_CODING_ENVELOPE.v1.json",
+      "docs/arrverse/development-awareness-20261117/SOURCE_RECEIPT.json"
+    ]
+  },
+  "sdc": {
+    "packageRef": "thuhbutcher/ArrVerseOfficial#70",
+    "generationRef": "d1bb0b557b6190f3cafffe2e371071cb5caf47b9",
+    "stages": [
+      "GATHER",
+      "BIND",
+      "RESEARCH",
+      "PLAN",
+      "BUILD",
+      "PROVE",
+      "RECEIPT",
+      "LEARN",
+      "RECONCILE"
+    ],
+    "minimumNecessaryContext": true
+  },
+  "sdk": {
+    "generationRef": "577683f865c41de26a1dc92e40291bb34eaa8cfa",
+    "profile": "LOCAL_INTERNAL",
+    "sdkRequired": true,
+    "contractPackRefs": []
+  },
+  "affectedTags": [
+    "SOURCE",
+    "TOOLING",
+    "QUALIFICATION",
+    "EVIDENCE",
+    "KNOWLEDGE",
+    "RECOVERY"
+  ],
+  "templarr": {
+    "disposition": "PATTERN_ONLY",
+    "refs": [
+      "https://github.com/thuhbutcher/ArrVerseReconstruction/blob/b3ee822b13e28982354cdfc9cea597b572395c2b/OpenBrainarr/packages/arrui-persona/src/compile.ts",
+      "https://github.com/thuhbutcher/OpenCodarr/blob/edc9c135867fece67e9564e60e2f3cfa014e3fef/AGENTS.md"
+    ],
+    "reason": "Reuse existing additive compiler overlay, actual compiler tests and repository instruction guidance. Owner-local guidance and documentation only; no new API, ArrAgent contract, transport schema, shared SDK behavior or runtime service registry is implemented."
+  },
+  "proof": {
+    "positiveTests": [
+      "Shared handbook bytes equal the originating OpenBrainarr projection",
+      "Existing root AGENTS content is an unchanged prefix"
+    ],
+    "hostileTests": [
+      "Digest or source-pointer mismatch is an unresolved projection, not an application receipt"
+    ],
+    "sharedSdkSurface": false,
+    "parityLanguages": [],
+    "recoveryDisposition": "REQUIRED",
+    "recoveryTests": [
+      "Rollback is removal of this additive AGENTS suffix and the occurrence files; no installed runtime mutation"
+    ],
+    "executionEvidenceRefs": [
+      "docs/arrverse/development-awareness-20261117/SOURCE_RECEIPT.json"
+    ]
+  },
+  "reconciliation": {
+    "targets": [
+      "PROJECTARR",
+      "WIKIARR",
+      "ASA",
+      "BREADCRUMB"
+    ],
+    "ownerReadbackRefs": []
+  },
+  "authority": {
+    "sdkGrantsPermission": false,
+    "contextGrantsPermission": false,
+    "effectAuthority": false
+  },
+  "claimState": "AUTHORED"
+}

@@ -72,7 +72,7 @@ const desktop = [
 ]
 
 export const dict = {
-  ...Object.fromEntries(DESKTOP_NATIVE_KEYS.map((key, index) => [key, desktop[index]])),
+  ...Object.fromEntries(desktop.map((value, index) => [DESKTOP_NATIVE_KEYS[index], value])),
   "command.category.suggested": "Siūloma",
   "command.category.view": "Rodinys",
   "command.category.project": "Projektas",
@@ -352,7 +352,6 @@ export const dict = {
   "session.new.project.search": "Ieškoti projektų",
   "session.new.project.add": "Pridėti projektą",
   "session.new.workspace.runIn": "Vykdykite sesiją",
-  "session.new.workspace.triggerLocal": "Vietinis",
   "session.new.workspace.local": "Vietinė saugykla",
   "session.new.git.none": "Nėra Git",
   "session.header.open.finder": "Finder",

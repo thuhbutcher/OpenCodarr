@@ -72,7 +72,7 @@ const desktop = [
 ]
 
 export const dict = {
-  ...Object.fromEntries(DESKTOP_NATIVE_KEYS.map((key, index) => [key, desktop[index]])),
+  ...Object.fromEntries(desktop.map((value, index) => [DESKTOP_NATIVE_KEYS[index], value])),
   "command.category.suggested": "Javasolt",
   "command.category.view": "Nézet",
   "command.category.project": "Projekt",
@@ -350,7 +350,6 @@ export const dict = {
   "session.new.project.search": "Projektek keresése",
   "session.new.project.add": "Projekt hozzáadása",
   "session.new.workspace.runIn": "Futtassa a munkamenetet",
-  "session.new.workspace.triggerLocal": "Helyi",
   "session.new.workspace.local": "Helyi adattár",
   "session.new.git.none": "Nincs Git",
   "session.header.open.finder": "Finder",

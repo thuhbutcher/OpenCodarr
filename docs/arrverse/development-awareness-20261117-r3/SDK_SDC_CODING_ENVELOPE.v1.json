@@ -1,0 +1,105 @@
+{
+  "schema": "arrverse.sdk-sdc-coding-envelope.v1",
+  "standardRef": "ARRVERSE.SDK-SDC-CODING@0.1.0-candidate.1",
+  "occurrenceId": "development-awareness-20261117-r3-opencodarr",
+  "taskRef": "https://github.com/thuhbutcher/OpenCodarr/pull/1",
+  "subject": {
+    "subjectId": "OpenCodarr",
+    "subjectKind": "Arr",
+    "ownerRef": "https://github.com/thuhbutcher/OpenCodarr/pull/1"
+  },
+  "source": {
+    "repository": "thuhbutcher/OpenCodarr",
+    "ref": "opencodarr-rebase",
+    "commit": "f4afb726bc950a6bdcc9398532ea03e3256dd315",
+    "paths": [
+      "docs/arrverse/development-awareness-20261117-r3/MIRROR_CHECK_RESULT.json",
+      "docs/arrverse/development-awareness-20261117-r3/MIRROR_EXECUTION_RECEIPT.json",
+      "docs/arrverse/development-awareness-20261117-r3/README.md",
+      "docs/arrverse/development-awareness-20261117-r3/SDK_SDC_CODING_ENVELOPE.v1.json",
+      "docs/arrverse/development-awareness-20261117-r3/SOURCE_RECEIPT.json",
+      "tools/arrverse/check-development-handbook-projections.mjs"
+    ]
+  },
+  "sdc": {
+    "packageRef": "thuhbutcher/ArrVerseOfficial#70",
+    "generationRef": "d1bb0b557b6190f3cafffe2e371071cb5caf47b9",
+    "stages": [
+      "GATHER",
+      "BIND",
+      "RESEARCH",
+      "PLAN",
+      "BUILD",
+      "PROVE",
+      "RECEIPT",
+      "LEARN",
+      "RECONCILE"
+    ],
+    "minimumNecessaryContext": true
+  },
+  "sdk": {
+    "generationRef": "577683f865c41de26a1dc92e40291bb34eaa8cfa",
+    "profile": "LOCAL_INTERNAL",
+    "sdkRequired": true,
+    "contractPackRefs": [],
+    "canonicalizationProfileRef": "https://github.com/thuhbutcher/ArrVerseCodeShare/blob/577683f865c41de26a1dc92e40291bb34eaa8cfa/implementation/arrverse-sdk-r1-taskarr-monitarr-20260925/tools/check_sdk_sdc_revision.mjs"
+  },
+  "affectedTags": [
+    "SOURCE",
+    "TOOLING",
+    "QUALIFICATION",
+    "EVIDENCE",
+    "PROVENANCE",
+    "KNOWLEDGE",
+    "RECOVERY",
+    "DIGEST",
+    "CONTENT_IDENTITY"
+  ],
+  "templarr": {
+    "disposition": "PATTERN_ONLY",
+    "refs": [
+      "https://github.com/thuhbutcher/ArrVerseReconstruction/blob/3334eaa8ec6849e679ff579aa3ae909aa2b1daab/OpenBrainarr/reconstruction/openbrainarr-test/check-development-handbook-projections.mjs",
+      "https://github.com/thuhbutcher/ArrVerseReconstruction/blob/6a7a64f4043b3ea1becb0d41da9f8977c0c2752a/OpenBrainarr/reconstruction/openbrainarr-test/development-wakeup.test.mjs",
+      "https://github.com/thuhbutcher/ArrVerseReconstruction/blob/6a7a64f4043b3ea1becb0d41da9f8977c0c2752a/OpenBrainarr/reconstruction/opencode-plugins/lib/g-context-host-adapter.test.ts",
+      "https://github.com/thuhbutcher/ArrVerseCodeShare/blob/577683f865c41de26a1dc92e40291bb34eaa8cfa/implementation/arrverse-sdk-r1-taskarr-monitarr-20260925/read-boundary/json.ts",
+      "https://github.com/thuhbutcher/ArrVerseCodeShare/blob/577683f865c41de26a1dc92e40291bb34eaa8cfa/implementation/arrverse-sdk-r1-taskarr-monitarr-20260925/tools/check_sdk_sdc_revision.mjs"
+    ],
+    "reason": "Project the byte-identical standalone read-only checker from its exact OpenBrainarr publication. Reuse selected SDK raw-byte SHA-256, strict JSON and bounded file patterns. No owner API, runtime client change, new contract or shared SDK surface."
+  },
+  "proof": {
+    "positiveTests": [
+      "Byte equality of the two staged checker copies and exact source blob/hash confirmed.",
+      "One actual local CLI invocation through the OpenCodarr copy passes against four exact pinned published inputs; output matches canonical output and inputs remain unchanged.",
+      "Canonical checker source at the selected OpenBrainarr commit has12 passing cases; this is inherited same-source evidence, not an additional independent suite."
+    ],
+    "hostileTests": [
+      "Canonical12-case suite includes malformed input, wrong source selection, false application/authority claims and a CLI alias regression. Exact same checker bytes are mirrored; no duplicate hostile run claimed."
+    ],
+    "sharedSdkSurface": false,
+    "parityLanguages": [],
+    "recoveryDisposition": "REQUIRED",
+    "recoveryTests": [
+      "Read-only checker leaves selected inputs unchanged. Exact base f4afb726bc950a6bdcc9398532ea03e3256dd315 is retained for a bounded additive-source revert preserving subsequent work.",
+      "A mismatched expected branch head must stop publication and require fresh source review; installed host state remains unchanged."
+    ],
+    "executionEvidenceRefs": [
+      "docs/arrverse/development-awareness-20261117-r3/MIRROR_EXECUTION_RECEIPT.json",
+      "https://github.com/thuhbutcher/ArrVerseReconstruction/blob/3334eaa8ec6849e679ff579aa3ae909aa2b1daab/OpenBrainarr/reconstruction/development-awareness-20261117-r3/checker/CHECKER_EXECUTION_RECEIPT.json"
+    ]
+  },
+  "reconciliation": {
+    "targets": [
+      "PROJECTARR",
+      "WIKIARR",
+      "ASA",
+      "BREADCRUMB"
+    ],
+    "ownerReadbackRefs": []
+  },
+  "authority": {
+    "sdkGrantsPermission": false,
+    "contextGrantsPermission": false,
+    "effectAuthority": false
+  },
+  "claimState": "AUTHORED"
+}

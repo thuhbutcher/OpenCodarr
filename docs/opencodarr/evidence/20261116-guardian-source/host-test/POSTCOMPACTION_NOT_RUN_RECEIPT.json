@@ -1,0 +1,65 @@
+{
+  "schema": "opencodarr.postcompaction-test-preparation-receipt.v1",
+  "capturedAt": "2026-11-15T23:53:26Z",
+  "repository": "thuhbutcher/OpenCodarr",
+  "baseCommit": "12e0844dc66684b3336a626a0183d91f479d3315",
+  "candidateManifest": "POSTCOMPACTION_PATCH_MANIFEST.json",
+  "patch": "postcompaction-host-test.patch",
+  "patchSha256": "dddaa2df37b26b5e1dba360a9507fa423df3a24a728d1c0377d2c8c108aaffae",
+  "disposition": "AUTHORED_NOT_RUN",
+  "staticChecks": [
+    {
+      "kind": "EXACT_SOURCE_BLOB_INTEGRITY",
+      "result": "MATCH",
+      "count": 24,
+      "sourceManifests": [
+        "PROVENANCE.json",
+        "PROVENANCE-extra.json",
+        "PROVENANCE-test-helper.json"
+      ],
+      "method": "Git blob SHA-1 recomputed from exact bytes; not a runtime test"
+    },
+    {
+      "kind": "PATCH_APPLICABILITY",
+      "result": "PASS",
+      "command": "git apply --check --directory=source postcompaction-host-test.patch",
+      "cwd": "/workspace/scratch/aa367cee0262/opencodarr-review-20261115",
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mutation": false
+    },
+    {
+      "kind": "SOURCE_INSPECTION",
+      "result": "REVIEWED",
+      "scope": "TestLLM execution-time request snapshots; public request-kind/header types; prepare awaits model.request before handing request to LLM; observer does not modify context/system content"
+    }
+  ],
+  "runtime": {
+    "bun": "NOT_RUN",
+    "packageTypecheck": "NOT_RUN",
+    "syntheticHostCases": "NOT_RUN",
+    "configuredMode": "NOT_RUN",
+    "embeddedMode": "NOT_RUN",
+    "realProvider": "NOT_RUN",
+    "nativeOperation": "NOT_RUN",
+    "newDesignedCasesExecuted": 0,
+    "existingKeeperCasesExtended": 2,
+    "newClaimedPassingCases": 0
+  },
+  "externalEffects": {
+    "repositoryWrite": false,
+    "serviceStarted": false,
+    "dependencyInstall": false,
+    "providerCalls": 0,
+    "ownerApplied": false,
+    "publication": false
+  },
+  "limits": [
+    "This is a test preparation occurrence for a verified coverage gap, not evidence of a reproduced runtime context-loss defect.",
+    "Static patch applicability is not TypeScript validation or runtime execution.",
+    "Future synthetic host results cannot establish full OC-016, native operation, provider-wire bytes, authorization, acceptance or release readiness.",
+    "The separate Guardian guard candidate and its synthetic hook-fixture results are not included in this test candidate's execution population.",
+    "Mutable owner routes remain navigation only; no external receiving disposition is recorded."
+  ]
+}

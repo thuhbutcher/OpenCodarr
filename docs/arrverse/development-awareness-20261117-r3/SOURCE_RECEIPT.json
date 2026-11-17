@@ -1,0 +1,122 @@
+{
+  "format": "mirrored-checker-source-receipt",
+  "formatStatus": "Occurrence-local source evidence; not an owner protocol",
+  "recordedAtUtc": "2026-11-17T20:00:28.186511+00:00",
+  "repository": "thuhbutcher/OpenCodarr",
+  "baseCommit": "f4afb726bc950a6bdcc9398532ea03e3256dd315",
+  "checkerOrigin": {
+    "repository": "thuhbutcher/ArrVerseReconstruction",
+    "commit": "3334eaa8ec6849e679ff579aa3ae909aa2b1daab",
+    "path": "OpenBrainarr/reconstruction/openbrainarr-test/check-development-handbook-projections.mjs",
+    "sha256": "323fdbcacf5244a1ab311354c92f46e4d4ae777e9ab6b49fc8157ad9e4b73065",
+    "gitBlob": "2aa1862efe0b246db1d14a80ef29841e78843876"
+  },
+  "handbookOrigin": {
+    "commit": "6a7a64f4043b3ea1becb0d41da9f8977c0c2752a",
+    "revision": "development-awareness-20261117-r1",
+    "sha256": "0a666ed43d488b889de644d83bfff1d6c9ed2ccbec612f81eff2a53640d062fc",
+    "bytes": 14214,
+    "handbookAndBindingChanges": 0
+  },
+  "sourcePaths": [
+    "docs/arrverse/development-awareness-20261117-r3/MIRROR_CHECK_RESULT.json",
+    "docs/arrverse/development-awareness-20261117-r3/MIRROR_EXECUTION_RECEIPT.json",
+    "docs/arrverse/development-awareness-20261117-r3/README.md",
+    "docs/arrverse/development-awareness-20261117-r3/SDK_SDC_CODING_ENVELOPE.v1.json",
+    "docs/arrverse/development-awareness-20261117-r3/SOURCE_RECEIPT.json",
+    "tools/arrverse/check-development-handbook-projections.mjs"
+  ],
+  "localMirrorExecution": {
+    "format": "local-mirrored-checker-execution",
+    "recordedAt": "2026-11-17T19:56:08.374997+00:00",
+    "command": [
+      "node",
+      "/workspace/scratch/c7370e18e3bb/source-work-r3/staging/codarr/tools/arrverse/check-development-handbook-projections.mjs",
+      "--brain-handbook",
+      "/workspace/scratch/c7370e18e3bb/opencode_wakeup_audit/source/OpenBrainarr/docs/reconstruction/DEVELOPMENT_SERVICE_HANDBOOK.md",
+      "--brain-binding",
+      "/workspace/scratch/c7370e18e3bb/opencode_wakeup_audit/source/OpenBrainarr/docs/reconstruction/DEVELOPMENT_SERVICE_HANDBOOK.binding.json",
+      "--codarr-handbook",
+      "/workspace/scratch/c7370e18e3bb/opencodarr-source/docs/arrverse/DEVELOPMENT_SERVICE_HANDBOOK.md",
+      "--codarr-binding",
+      "/workspace/scratch/c7370e18e3bb/opencodarr-source/docs/arrverse/DEVELOPMENT_SERVICE_HANDBOOK.binding.json",
+      "--expected-origin-commit",
+      "6a7a64f4043b3ea1becb0d41da9f8977c0c2752a",
+      "--expected-revision",
+      "development-awareness-20261117-r1",
+      "--expected-sha256",
+      "0a666ed43d488b889de644d83bfff1d6c9ed2ccbec612f81eff2a53640d062fc",
+      "--expected-bytes",
+      "14214"
+    ],
+    "cwd": "/workspace/scratch/c7370e18e3bb/source-work-r3/staging/codarr",
+    "exitCode": 0,
+    "checkerSha256": "323fdbcacf5244a1ab311354c92f46e4d4ae777e9ab6b49fc8157ad9e4b73065",
+    "checkerBytesEqualToCanonical": true,
+    "stdoutSha256": "16d4b8144d0cd1d5348a86458a8c4da3258f8901853e5c462baa943684fad9b0",
+    "stdoutPath": "MIRROR_CHECK_RESULT.json",
+    "stderrBytes": 0,
+    "sourceInputsUnchanged": true,
+    "scope": "One positive CLI call through the actual mirrored checker; not an additional twelve-case suite",
+    "sourceAuthentication": false,
+    "ownerApplication": false,
+    "installedOpenCode": "NOT_APPLIED",
+    "nativeActivation": "UNVERIFIED",
+    "authorityEffect": "NONE"
+  },
+  "canonicalTests": {
+    "finalCases": 12,
+    "passed": 12,
+    "failed": 0,
+    "skipped": 0,
+    "receipt": "https://github.com/thuhbutcher/ArrVerseReconstruction/blob/3334eaa8ec6849e679ff579aa3ae909aa2b1daab/OpenBrainarr/reconstruction/development-awareness-20261117-r3/checker/CHECKER_EXECUTION_RECEIPT.json",
+    "population": "Same-source canonical evidence; not rerun as an independent OpenCodarr suite"
+  },
+  "scope": {
+    "runtimeCodeChanged": false,
+    "rootAgentsChanged": false,
+    "nativeHostChanged": false,
+    "automaticProducerWired": false,
+    "fullBuild": "NOT_RUN"
+  },
+  "revisionGate": {
+    "state": "REQUIRED_ON_ACTUAL_CANDIDATE_BEFORE_BRANCH_MOVE",
+    "sourceCommitBinding": "Containing candidate commit; exact gate and source readback recorded externally",
+    "receiptRoute": "https://github.com/thuhbutcher/OpenCodarr/pull/1"
+  },
+  "publication": "AUTHORED_WITH_EXECUTED_LOCAL_EVIDENCE; final branch readback is external",
+  "nativeOwnerApplication": false,
+  "installedOpenCode": "NOT_APPLIED",
+  "nativeActivation": "UNVERIFIED",
+  "sourceAuthentication": false,
+  "authorityEffect": "NONE",
+  "merge": false,
+  "release": false,
+  "artifactHashes": [
+    {
+      "path": "docs/arrverse/development-awareness-20261117-r3/MIRROR_CHECK_RESULT.json",
+      "sha256": "16d4b8144d0cd1d5348a86458a8c4da3258f8901853e5c462baa943684fad9b0",
+      "bytes": 1146
+    },
+    {
+      "path": "docs/arrverse/development-awareness-20261117-r3/MIRROR_EXECUTION_RECEIPT.json",
+      "sha256": "8bb00b8bb441c5495d0aa556f11e7cb1f2e2c9452e69778cfc26dbcb81150936",
+      "bytes": 1806
+    },
+    {
+      "path": "docs/arrverse/development-awareness-20261117-r3/README.md",
+      "sha256": "7cf9d13629a794d8a6ba62ff8ad0c735aea1e0465b9b76a2876bd66b75a22856",
+      "bytes": 3842
+    },
+    {
+      "path": "docs/arrverse/development-awareness-20261117-r3/SDK_SDC_CODING_ENVELOPE.v1.json",
+      "sha256": "f067f34d5769e7da62144605d431ae326b2a1b89adf6c2025c6057fc7f33e013",
+      "bytes": 5042
+    },
+    {
+      "path": "tools/arrverse/check-development-handbook-projections.mjs",
+      "sha256": "323fdbcacf5244a1ab311354c92f46e4d4ae777e9ab6b49fc8157ad9e4b73065",
+      "bytes": 14616
+    }
+  ]
+}

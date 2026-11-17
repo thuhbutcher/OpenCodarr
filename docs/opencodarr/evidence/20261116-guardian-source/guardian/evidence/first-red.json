@@ -1,0 +1,27 @@
+{
+  "schema": "opencodarr.bounded-test-receipt.v1",
+  "label": "FIRST_RED_PRESERVED",
+  "timestampUTC": "2026-11-15T23:46:29.706442+00:00",
+  "sourceCommit": "12e0844dc66684b3336a626a0183d91f479d3315",
+  "command": [
+    "node",
+    "tools/run-regression.mjs",
+    "pristine"
+  ],
+  "cwd": "candidate/packages/plugins/session-guardian",
+  "exitCode": 1,
+  "log": "evidence/first-red.tap",
+  "logSHA256": "66d3c1d8470f9ff96703b323b5cc4d861c2db3318cf0f9fac5f928a92635ae3a",
+  "inputSHA256": {
+    "pristine/packages/plugins/session-guardian/index.ts": "03591fb4709083e3bba4701256123cfe6e5adaf58ce64bc3456c44d123f8827c",
+    "pristine/packages/plugins/session-guardian/contract.ts": "5496fe1fd69126e8987b32c90e9c85b53f8e760ccb700adb8de40bdbd62df665",
+    "candidate/packages/plugins/session-guardian/reload.test.ts": "c6bc569f226caa571b2eb1e17f8c9193c8951038a5e140da073e5ab81f8a3c77",
+    "tools/run-regression.mjs": "e342c50d68679cfcbbfd1b882af2708e0c29504d943facdce2ec51f4c744003a"
+  },
+  "evidenceClass": "EXECUTED_SYNTHETIC_ACTUAL_GUARDIAN_SOURCE",
+  "coreHostExecuted": false,
+  "bunExecuted": false,
+  "providerModelCalls": 0,
+  "nativeProof": false,
+  "authority": false
+}
