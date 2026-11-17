@@ -1,0 +1,35 @@
+{
+  "format": "development-handbook-projection-check",
+  "formatStatus": "occurrence-local evidence; not a registered owner protocol",
+  "status": "PASS_LOCAL_SOURCE_CONSISTENCY",
+  "revision": "development-awareness-20261117-r1",
+  "expectedOrigin": {
+    "repository": "thuhbutcher/ArrVerseReconstruction",
+    "sourcePath": "OpenBrainarr/docs/reconstruction/DEVELOPMENT_SERVICE_HANDBOOK.md",
+    "commit": "6a7a64f4043b3ea1becb0d41da9f8977c0c2752a",
+    "selection": "CALLER_SUPPLIED"
+  },
+  "handbook": {
+    "sha256": "0a666ed43d488b889de644d83bfff1d6c9ed2ccbec612f81eff2a53640d062fc",
+    "bytes": 14214,
+    "rawBytesEqual": true,
+    "utf8Valid": true
+  },
+  "bindings": [
+    {
+      "client": "OpenBrainarr",
+      "sha256": "7127b5309c7d6d1695c43b7ded4809b9e2561bbaef586fefe1bf4c6fa10348f1",
+      "bytes": 969
+    },
+    {
+      "client": "OpenCodarr",
+      "sha256": "387135f8dca267d6cc5e00dcef055e3a539fdddc22ca2ecb05d41a812a3c5e88",
+      "bytes": 1065
+    }
+  ],
+  "sourceAuthentication": false,
+  "ownerApplication": false,
+  "authorityEffect": "NONE",
+  "installedOpenCode": "NOT_APPLIED",
+  "nativeActivation": "UNVERIFIED"
+}
