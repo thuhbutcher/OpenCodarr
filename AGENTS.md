@@ -220,3 +220,16 @@ const table = sqliteTable("session", {
 - Keep delivery vocabulary explicit. Prompts steer by default. At safe step boundaries, steered compaction takes priority up to the first steered move control; other steers retain enqueue order. At an idle boundary, steers take priority; otherwise exactly one queued item delivers before the runner reevaluates continuation. Inbox items may be cancelled or changed between queue and steer before delivery. Promoting new user input resets the selected agent's step allowance; a batch of steers resets it once.
 - One step is one logical LLM call; its durable record covers only the model-visible span. Do not write "provider turn", and do not use bare "turn" for a single call: "turn" is reserved for the future assistant-turn unit containing all steps from prompt promotion until the session would go idle.
 - Keep event replay ownership separate from clustered Session execution ownership.
+
+
+## ArrVerse development handbook
+
+For ArrVerse development, read `docs/arrverse/DEVELOPMENT_SERVICE_HANDBOOK.md` and `docs/arrverse/DEVELOPMENT_SERVICE_HANDBOOK.binding.json` before relying on the development service workflow. Resolve this repository root before reading. The binding identifies the selected OpenBrainarr source commit and handbook digest. Check this local projection against that binding; missing or mismatched content remains unresolved context.
+
+OpenCode, OpenCodarr and OpenBrainarr follow the same selected handbook rules. Carry material corrections into the related projections and the installed OpenCode handoff, while preserving each client's version, tools, loader and authority boundaries. This AGENTS section instructs a document read; it does not automatically inline the referenced document or establish that an installed session loaded it.
+
+Worker1 Taskarr owns local task acceptance and lifecycle. Worker1 Neuronatarr or Brainarr picks up accepted work according to its task and selected owner contract. Forgearr participates where coding/build work requires it. Transportarr transfers the required bytes; the receiver verifies and binds them to the accepted task before execution. Preserve the inspected NeuronatarrConsumer loopback guard for that lane and resolve Taskarr receiving ingress separately.
+
+Recover task/source/workspace bindings and current relevant service observations at wakeup, resume and after compaction. Keep configured, discovered, callable, authorized, verified and stale/unknown observations distinct. A context refresh grants no additional effect authority. Use the existing client instruction mechanisms only when their actual host/version and write contract are selected. Preserve the provider base prompt and shared G CORE continuity.
+
+Source publication, loader binding, session readback and native owner application have separate receipts. Installed OpenCode activation remains NOT_APPLIED in this occurrence until its own authorized installation and observed request-context readback. Reconcile affected source and existing work/ASA/breadcrumb/knowledge routes without claiming native completion from this guidance.

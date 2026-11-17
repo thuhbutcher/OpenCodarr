@@ -1,0 +1,22 @@
+{
+  "format": "development-handbook-projection-receipt",
+  "formatStatus": "occurrence-local evidence; not a registered owner protocol",
+  "revision": "development-awareness-20261117-r1",
+  "sha256": "0a666ed43d488b889de644d83bfff1d6c9ed2ccbec612f81eff2a53640d062fc",
+  "bytes": 14214,
+  "origin": {
+    "repository": "thuhbutcher/ArrVerseReconstruction",
+    "sourcePath": "OpenBrainarr/docs/reconstruction/DEVELOPMENT_SERVICE_HANDBOOK.md",
+    "commit": "6a7a64f4043b3ea1becb0d41da9f8977c0c2752a",
+    "url": "https://github.com/thuhbutcher/ArrVerseReconstruction/blob/6a7a64f4043b3ea1becb0d41da9f8977c0c2752a/OpenBrainarr/docs/reconstruction/DEVELOPMENT_SERVICE_HANDBOOK.md"
+  },
+  "projection": {
+    "repository": "thuhbutcher/OpenCodarr",
+    "path": "docs/arrverse/DEVELOPMENT_SERVICE_HANDBOOK.md"
+  },
+  "guidanceLoader": "Additive root AGENTS read instruction; no automatic document inlining or installed-host activation.",
+  "sourceState": "AUTHORED",
+  "installedOpenCode": "NOT_APPLIED",
+  "nativeActivation": "UNVERIFIED",
+  "effectAuthority": false
+}

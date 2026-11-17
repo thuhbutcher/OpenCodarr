@@ -1,0 +1,49 @@
+{
+  "format": "local-source-projection-receipt",
+  "formatStatus": "occurrence-local evidence, not a registered protocol",
+  "recordedAt": "2026-11-17T18:40:03.758726+00:00",
+  "baseCommit": "edc9c135867fece67e9564e60e2f3cfa014e3fef",
+  "originCommit": "6a7a64f4043b3ea1becb0d41da9f8977c0c2752a",
+  "handbookSha256": "0a666ed43d488b889de644d83bfff1d6c9ed2ccbec612f81eff2a53640d062fc",
+  "handbookBytesIdentical": true,
+  "preexistingAGENTSPrefixPreserved": true,
+  "preexistingAGENTSBlob": "7ce72dcb52c9bccdcd30de04754f0379d3d257c8",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "gitBlob": "dca4714784d5ce7ecb57a0f7c17c412da6e86024",
+      "sha256": "347c03a5aa6b147e810cfe04e1f5cc4fb003050a84e1faaea92c571b73b8a44e",
+      "bytes": 20730
+    },
+    {
+      "path": "docs/arrverse/DEVELOPMENT_SERVICE_HANDBOOK.binding.json",
+      "gitBlob": "c07c6b44ca3805c362807236fcefe36e40cf32b6",
+      "sha256": "387135f8dca267d6cc5e00dcef055e3a539fdddc22ca2ecb05d41a812a3c5e88",
+      "bytes": 1065
+    },
+    {
+      "path": "docs/arrverse/DEVELOPMENT_SERVICE_HANDBOOK.md",
+      "gitBlob": "0ac7c3cf8b36d626d548e879a90dde31701faac9",
+      "sha256": "0a666ed43d488b889de644d83bfff1d6c9ed2ccbec612f81eff2a53640d062fc",
+      "bytes": 14214
+    },
+    {
+      "path": "docs/arrverse/development-awareness-20261117/SDK_SDC_CODING_ENVELOPE.v1.json",
+      "gitBlob": "9e8d8222520067c8c841fcbe5d1aa14f3d760fc6",
+      "sha256": "7b6bcfea4c2006cbf844d32834fc9d42534aee6f298e5b515b36f3d5a68ddfce",
+      "bytes": 3065
+    }
+  ],
+  "checks": [
+    "Exact handbook byte equality",
+    "Exact AGENTS prefix Git-blob verification",
+    "Current SDK/SDC envelope validation and candidate revision-scope check recorded separately"
+  ],
+  "runtimeTests": "NOT_RUN: documentation and AGENTS guidance only; no executable OpenCodarr behavior modified",
+  "hostileApplicationClaim": "No automatic reader or executable digest rejection is implemented; instructions require an explicit read/check and report unresolved mismatch. The source envelope describes that obligation, not a new tested runtime guard.",
+  "sourceState": "AUTHORED",
+  "installedOpenCodeHandoff": "NOT_APPLIED",
+  "nativeActivation": "UNVERIFIED",
+  "ownerApplication": "PENDING",
+  "effectAuthority": false
+}
